@@ -1,0 +1,250 @@
+@charset "utf-8";
+
+*{margin: 0;padding: 0;}
+
+html,body,#app,.page{
+	width: 100%;
+	height: 100%;
+	font-size:16px;
+}
+
+.page{
+	position: absolute;
+}
+
+img,div,p,h1{
+	position: absolute;
+}
+/* page1模块  样式 */
+.page1{
+	background: pink;
+	/* z-index: 9; */
+}
+
+.p1_bg1{
+	width: 100%;
+}
+
+.p1_down{
+	width: 100%;
+	height: 35%;
+	bottom: 0;
+	left: 0;
+}
+
+.p1_xk{
+	width: 90%;
+	height: 45%;
+	left: 5%;
+	top: 3%;
+	animation: p1_xk 1s both linear 1s;
+}
+
+.p1_lg{
+	width: 70%;
+	height: 25%;
+	left: 15%;
+	top:17%;
+	/* border:2px solid pink; */
+	transform: rotate(-3deg);
+	animation: p1_lg 1s both linear 2s;
+}
+
+.p1_fd{
+	top:40%;
+	right: 10%;
+	animation: p1_fd 1s both linear infinite 3s;
+}
+
+.p1_xf{
+	left:-5%;
+	bottom: -5%;
+	width: 30%;
+	animation: p1_xf 1s both linear infinite 3.5s;
+}
+
+.p1_qq{
+	right:-5%;
+	bottom: -5%;
+	width: 30%;
+	transform: rotate(90deg);
+	animation: p1_qq 1s both linear infinite 3.5s;
+}
+
+.p1_txt1{
+	width: 100%;
+	top:55%;
+	left: 0;
+	color: deeppink;
+	text-align: center;
+}
+.p1_txt1>h1{
+	width: 100%;
+	font-size:2rem;
+	animation: leftIn 1s both linear 4.5s;
+}
+.p1_txt1>p{
+	width: 100%;
+	font-size:1.2rem;
+	margin-top: 3rem;
+	animation: rightIn 1s both linear 5.5s;
+}
+
+.p1_txt2{
+	bottom: 2%;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	color: yellow;
+	height: 20%;
+}
+
+.p1_txt2>h1{
+	font-size:2rem;
+	width: 100%;
+	animation: rightIn 1s both linear 6.5s;
+}
+
+.p1_txt2>p{
+	font-size:1.2rem;
+	color: darkorchid;
+	width: 30%;
+	height: 3rem;
+	background: skyblue;
+	margin: 4rem 38%;
+	border-radius: 0.8rem;
+	line-height: 3rem;
+	animation: leftIn 1s both linear 7.5s;
+	z-index: 99;
+}
+
+.p1_bg2{
+	width: 100%;
+	height: 100%;
+	animation: fadeOut 2s both linear;
+}
+
+.p1_lg2{
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+@keyframes fadeOut{
+	from{opacity: 1;}
+	to{opacity: 0;}
+}
+
+@keyframes p1_xk{
+	from{transform: translate(-50rem,-50rem) rotate(-360deg) scale(0.5);}
+	to{transform: translate(0,0) rotate(0) scale(1);}
+}
+
+@keyframes p1_lg{
+	from{transform: translateZ(50rem) scale(0);}
+	to{transform: translateZ(0) scale(1);}
+}
+
+@keyframes p1_fd{
+	from{opacity: 1;}
+	50%{opacity: 0.5;}
+	to{opacity: 1;}
+}
+
+@keyframes p1_xf{
+	from{transform: scale(1);}
+	50%{transform: scale(1.5);}
+	to{transform: scale(1);}
+}
+
+@keyframes p1_qq{
+	from{transform: rotate(90deg) scale(1);}
+	50%{transform: rotate(90deg) scale(1.5);}
+	to{transform: rotate(90deg) scale(1);}
+}
+
+@keyframes leftIn{
+	from{transform: translateX(-60rem);}
+	to{transform: translateX(0);}
+}
+
+@keyframes rightIn{
+	from{transform: translateX(60rem);}
+	to{transform: translateX(0);}
+}
+
+
+/* 以上是page1页 样式&动画 */
+.page2{
+	background: black;
+/* 	z-index: 8; */
+}
+
+.page3{
+	background: orange;
+	/* z-index: 7; */
+}
+
+.page4{
+	background: pink;
+	/* z-index: 6; */
+}
+
+.page5{
+	background: yellow;
+	/* z-index: 5; */
+}
+
+/* 有hidden类名的页面隐藏 */
+.hidden{
+	display: none;
+}
+
+/* 音乐按钮图标 */
+#musicBtn{
+	position:fixed;
+	width: 17%;
+	z-index: 99;
+	right: 5%;
+	top:3%;
+}
+
+/* 当前页向上 */
+@keyframes goTop{
+	from{transform: translateY(0);}
+	to{transform: translateY(-100%);}
+}
+
+.top{
+	animation: goTop 0.5s both linear;
+}
+
+/* 下一页向上 */
+@keyframes nextTop{
+	from{transform: translateY(100%);}
+	to{transform: translateY(0);}
+}
+
+.next{
+	animation: nextTop 0.5s both linear;
+}
+
+/* 当前页向下 */
+@keyframes down{
+	from{transform: translateY(0);}
+	to{transform: translateY(100%);}
+}
+
+.down{
+	animation:down 0.5s both linear;
+}
+
+/* 上一页向下 */
+@keyframes prev{
+	from{transform: translateY(-100%);}
+	to{transform: translateY(0);}
+}
+
+.prev{
+	animation: prev 0.5s both linear;
+}

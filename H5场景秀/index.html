@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+	<link rel="stylesheet" type="text/css" href="css/wx.css"/>
+</head>
+<body>
+	<div id="app">
+		<div class="page page1">
+			<img class="p1_bg1" src="img/bg.gif" >
+			<img class="p1_down" src="img/down.png" >
+			<img class="p1_xk" src="img/xk.png" >
+			<img class="p1_fd" src="img/fd.png" >
+			<img class="p1_lg" src="img/lg1.jpg" >
+			<div class="p1_txt1">
+				<h1>幸好有你，老龚</h1>
+				<p>茫茫人海，有你真好</p>
+			</div>
+			<div class="p1_txt2">
+				<h1>亲爱的老龚你有一封情书</h1>
+				<p>我喜欢你</p>
+			</div>
+			<img class="p1_xf" src="img/xf.png" >
+			<img class="p1_qq" src="img/qq.png" >
+			
+			<img class="p1_bg2" src="img/bj.gif" >
+			<img class="p1_lg2" src="img/lg.jpg" >
+		</div>
+		<div class="page page2 hidden"></div>
+		<div class="page page3 hidden"></div>
+		<div class="page page4 hidden"></div>
+		<div class="page page5 hidden"></div>
+	</div>
+	<img id="musicBtn" onclick="play()" src="img/musicBtn.png" >
+	<audio id="music" autoplay="autoplay" loop="loop" src="img/Taylor%20Swift%20-%2022.mp3"></audio>
+</body>
+<!-- 依赖库/框架开发  先引入库/框架 脚本 -->
+<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/touch.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	// 音乐开关
+	function play(){
+		if(document.getElementById('music').paused){
+			document.getElementById('music').play();
+		}else{
+			document.getElementById('music').pause();
+		}
+	}
+</script>
+</html>
