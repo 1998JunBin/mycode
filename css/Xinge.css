@@ -1,0 +1,1856 @@
+@charset "utf-8";
+
+*{margin: 0;padding: 0;}
+a{text-decoration: none;}
+body,html{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+body{
+	background-color: #f5f5f5;
+}
+
+.head{
+	width: 100%;
+	box-sizing: border-box;
+	background-color: #242424;
+  }
+  .head_top{
+	width: 1100px;
+	height: 69px;
+	margin: 0 auto;
+	background-color: #242424;
+	border-bottom: 1px solid #000000;
+  }
+  .head_top > .logo{
+	float: left;
+	width: 176px;
+	height: 69px;
+	background: url("../img/topbar.png") no-repeat;
+	background-position: 0 0;
+  }
+  .head_top > .logo > a{
+	float: left;
+	width: 157px;
+	height: 100%;
+	padding-right: 20px;
+	text-indent: -9999px;
+  }
+  
+  .head_top > .head_top_content{
+   float: left;
+  }
+  .head_top > .head_top_content > li{
+	float: left;
+	height: 70px;
+	position: relative;
+	font-size: 14px;
+	list-style: none;
+  }
+  .head_top > .head_top_content > li a{
+	text-decoration: none;
+	float: left;
+	color: #cccccc;
+	line-height: 70px;
+	padding: 0 19px;
+  }
+  .head_top > .head_top_content > li .active{
+	color: white;
+	background: #000; 
+  
+  }
+  .head_top > .head_top_content > li a:hover{
+	color: white;
+	background: #000;
+  }
+  .head_top > .head_top_content .show{
+	width: 12px;
+	height: 7px;
+	position: absolute;
+	left: 50%;
+	top: 64px;
+	background: url("../img/topbar.png") no-repeat 0 9999px;
+	background-position: -226px 0;
+	margin-left: -6px;
+  }
+  .hot{
+	width: 28px;
+	height: 19px;
+	position: absolute;
+	top: 21px;
+	left: 100px;
+	background: url("../img/topbar.png") no-repeat 0 9999px;
+	background-position: -190px 0;
+  }
+  .head_top > .login{
+	float: right;
+	height: 45px;
+	margin: 19px 0 0 20px;
+	padding: 0 22px 0 0;
+  }
+  .head_top > .login a{
+	display: block;
+	width: 28px;
+	color: #787878;
+	font-size: 12px;
+	margin-top: 7px;
+  }
+  .head_top > .login a:hover{
+	color: #999999;
+  }
+  
+  .head_top > .search{
+	margin-top: 19px;
+	background: url("../img/topbar.png") no-repeat;
+	background-position: 0 -99px;
+	background-color: white;
+	border-radius: 32px;
+	float: right;
+	width: 159px;
+	height: 32px;
+	z-index: 1;
+  }
+  .head_top > .search input{
+	color: #333;
+	line-height: 16px;
+	width: 122px;
+	margin: 8px 0 0 30px;
+	padding: 0;
+	border: 0;
+	font-size: 12px;
+	outline: none;
+  }
+  .head_top2{
+	height: 35px;
+	z-index: 99;
+	box-sizing: border-box;
+	background-color: #c20c0c;
+	border-bottom: 1px solid #a40011;
+  }
+  .head_top2 > .wrap{
+	width: 1100px;
+	height: 34px;
+	margin: 0 auto;
+  }
+  .head_top2  > .wrap ul{
+	float: left;
+	padding-left: 180px;
+  }
+  .head_top2 > .wrap ul li{
+   list-style: none;
+	float: left;
+	line-height: 34px;
+	font-size: 12px;
+	display: list-item;
+  }
+  .head_top2 > .wrap ul li a{
+	display: inline-block;
+	position: relative;
+	height: 20px;
+	color: white;
+	padding: 0 13px;
+	margin: 7px 17px 0;
+	border-radius: 20px;
+	line-height: 21px;
+  }
+  .head_top2 > .wrap ul li a:hover,.head_top2 > .wrap ul li .active{
+	background-color: #9b0909
+  }
+  .head_top2 > .wrap ul li a span{
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	display: inline-block;
+	top: 2px;
+	background: url("../img/white-r-icon.png");
+	background-size: cover;
+  }
+
+
+
+#dahezi{
+	position: absolute;
+    width: 70%;
+    height: 200%;
+	background-color:#fff;
+	left: 15%;
+	top: 16.8%;
+	border: solid 1px darkgray;
+}
+
+.up{
+	position: absolute;
+	width: 90%;
+	height: 36.7%;
+	top: 0%;
+	left: 5%;
+	/* background-color: bisque; */
+}
+
+.down{
+	position: absolute;
+	width: 90%;
+	height: 60%;
+	top: 36%;
+	left: 5%;
+	/* background-color: chocolate; */
+}
+
+.biaoti1{
+	position: absolute;
+}
+
+.henxian1{
+	position: absolute;
+	background-color: #c20c0c;
+	width: 100%;
+    height: 3px;
+	top: 8%;
+	border-radius: 10%;
+}
+
+.henxian2{
+	position: absolute;
+	background-color: #c20c0c;
+	width: 100%;
+    height: 3px;
+	top: 4.5%;
+	border-radius: 10%;
+}
+
+.all{
+	position: absolute;
+    float: right;
+	top: 0%;
+	left: 14%;
+	top: 1.5%;
+	color: #666;
+    height: 15px;
+	width: 29px;
+	font-size: 13px;
+}
+.all:hover {border-bottom: solid 1px gray;}
+.chiness{
+	position: absolute;
+    float: right;
+	top: 0%;
+	left: 20.5%;
+	top: 1.5%;
+	color: #666;
+    height: 15px;
+	width: 29px;
+	
+	font-size: 13px;
+}
+.chiness:hover{border-bottom: solid 1px gray;}
+.oumei{
+	position: absolute;
+    float: right;
+	top: 0%;
+	left: 27%;
+	top: 1.5%;
+	color: #666;
+    height: 15px;
+	width: 29px;
+    font-size: 13px;
+}
+.oumei:hover{border-bottom: solid 1px gray;}
+.line1{
+	position: absolute;
+	float: right;
+	top: 1.3%;
+	left: 18%;
+	font-size: 5px;
+	color: #C7C7C7;
+	}
+	
+.line2{
+	position: absolute;
+	float: right;
+	top: 1.3%;
+	left: 24.5%;
+	font-size: 5px;
+	color: #c7c7c7;
+	}	
+	
+.line3{
+	position: absolute;
+	float: right;
+	top: 1.3%;
+	left: 31%;
+	font-size: 5px;
+	color: #c7c7c7;
+	}		
+	
+/* 下面是第一行第一个 */
+.one-one{
+	position: absolute;
+	top: 14%;
+	width: 153px;
+	height: 155px;
+
+}
+.play{
+	position: absolute;
+	width: 85%;
+	height: 80%;
+	/* background-color: aqua; */
+	opacity: 0;
+	
+}
+.play>img{
+	position: absolute;
+	width: 28px;
+	height: 30px;
+	right: 5%;
+	top: 72%;
+	
+}
+.play:hover {
+	opacity: 1;
+}
+.one-one-p1{
+	position: absolute;
+	background: url(../img/coverall1.png) no-repeat;
+	width: 100%;
+	height: 80%;
+	background-size: 100% 100%;
+}
+.one-one-p1>img{
+	width: 85%;
+	height: 100%;
+}
+.one-one-p2{
+	position: absolute;
+	/* background-color: #D2691E; */
+	width: 30px;
+	height: 18px;
+	float: left;
+	top: 85%;
+	font-size: 15px;
+	color: black;
+}
+.one-one-p2:hover {
+	border-bottom: solid 1px gray;
+}
+.one-one-p3{
+	position: absolute;
+	/* background-color: #D2691E; */
+	width: 38px;
+	height: 16px;
+	float: left;
+	top: 100%;
+	font-size: 5px;
+	color: #666;
+}
+.one-one-p3:hover {
+	border-bottom: solid 1px gray;
+}
+/* 下面是第一行第二个 */
+.one-two{
+	position: absolute;
+	left: 20.5%;
+	top: 14%;
+	width: 153px;
+	height: 155px;
+
+}
+
+.one-two-p1{
+	position: absolute;
+	background: url(../img/coverall1.png) no-repeat;
+	width: 100%;
+	height: 80%;
+	background-size: 100% 100%;
+}
+.one-two-p1>img{
+	width: 85%;
+	height: 100%;
+}
+.one-two-p2{
+	position: absolute;
+	/* background-color: #D2691E; */
+	width: 30px;
+	height: 18px;
+	float: left;
+	top: 85%;
+	font-size: 15px;
+	color: black;
+}
+.one-two-p2:hover {
+	border-bottom: solid 1px gray;
+}
+.one-two-p3{
+	position: absolute;
+	/* background-color: #D2691E; */
+	width: 38px;
+	height: 16px;
+	float: left;
+	top: 100%;
+	font-size: 5px;
+	color: #666;
+}
+.one-two-p3:hover {
+	border-bottom: solid 1px gray;
+}
+/* 下面是第一行第三个 */
+.one-three{
+	position: absolute;
+	left: 41%;
+	top: 14%;
+	width: 153px;
+	height: 155px;
+
+}
+
+.one-three-p1{
+	position: absolute;
+	background: url(../img/coverall1.png) no-repeat;
+	width: 100%;
+	height: 80%;
+	background-size: 100% 100%;
+}
+.one-three-p1>img{
+	width: 85%;
+	height: 100%;
+}
+.one-three-p2{
+	position: absolute;
+	/* background-color: #D2691E; */
+	width: 50px;
+	height: 20px;
+	float: left;
+	top: 85%;
+	font-size: 15px;
+	color: black;
+}
+.one-three-p2:hover {
+	border-bottom: solid 1px gray;
+}
+.one-three-p3{
+	position: absolute;
+	/* background-color: #D2691E; */
+	width: 50px;
+	height: 20px;
+	float: left;
+	top: 100%;
+	font-size: 5px;
+	color: #666;
+}
+.one-three-p3:hover {
+	border-bottom: solid 1px gray;
+}
+/* 下面是第一行的第四个 */
+.one-four{
+	position: absolute;
+	left: 61.5%;
+	top: 14%;
+	width: 153px;
+	height: 155px;
+
+}
+
+.one-four-p1{
+	position: absolute;
+	background: url(../img/coverall1.png) no-repeat;
+	width: 100%;
+	height: 80%;
+	background-size: 100% 100%;
+}
+.one-four-p1>img{
+	width: 85%;
+	height: 100%;
+}
+.one-four-p2{
+	position: absolute;
+	/* background-color: #D2691E; */
+	width: 50px;
+	height: 20px;
+	float: left;
+	top: 85%;
+	font-size: 15px;
+	color: black;
+}
+.one-four-p2:hover {
+	border-bottom: solid 1px gray;
+}
+.one-four-p3{
+	position: absolute;
+	/* background-color: #D2691E; */
+	width: 50px;
+	height: 20px;
+	float: left;
+	top: 100%;
+	font-size: 5px;
+	color: #666;
+}
+.one-four-p3:hover {
+	border-bottom: solid 1px gray;
+}
+/* 下面是第一行第五个 */
+.one-five{
+	position: absolute;
+	right: 0%;
+	top: 14%;
+	width: 153px;
+	height: 155px;
+
+}
+
+.one-five-p1{
+	position: absolute;
+	background: url(../img/coverall1.png) no-repeat;
+	width: 100%;
+	height: 80%;
+	background-size: 100% 100%;
+}
+.one-five-p1>img{
+	width: 85%;
+	height: 100%;
+}
+.one-five-p2{
+	position: absolute;
+	/* background-color: #D2691E; */
+	width: 50px;
+	height: 20px;
+	float: left;
+	top: 85%;
+	font-size: 15px;
+	color: #000000;
+}
+.one-five-p2:hover {
+	border-bottom: solid 1px gray;
+}
+.one-five-p3{
+	position: absolute;
+	/* background-color: #D2691E; */
+	width: 50px;
+	height: 20px;
+	float: left;
+	top: 100%;
+	font-size: 5px;
+	color: #666;
+}
+.one-five-p3:hover {
+	border-bottom: solid 1px gray;
+}
+/* 下面是第二行第一个 */
+.two-one{
+	position: absolute;
+	bottom: 7%;
+	width: 153px;
+	height: 155px;
+
+}
+
+.two-one-p1{
+	position: absolute;
+	background: url(../img/coverall1.png) no-repeat;
+	width: 100%;
+	height: 80%;
+	background-size: 100% 100%;
+}
+.two-one-p1>img{
+	width: 85%;
+	height: 100%;
+}
+.two-one-p2{
+	position: absolute;
+	/* background-color: #D2691E; */
+	width: 50px;
+	height: 20px;
+	float: left;
+	top: 85%;
+	font-size: 15px;
+	color: black;
+}
+.two-one-p2:hover {
+	border-bottom: solid 1px gray;
+}
+.two-one-p3{
+	position: absolute;
+	/* background-color: #D2691E; */
+	width: 50px;
+	height: 20px;
+	float: left;
+	top: 100%;
+	font-size: 5px;
+	color: #666;
+}
+.two-one-p3:hover {
+	border-bottom: solid 1px gray;
+}
+/* 下面第二行的第二个 */
+.two-two{
+	position: absolute;
+	left: 20.5%;
+	bottom:7% ;
+	width: 153px;
+	height: 155px;
+
+}
+
+.two-two-p1{
+	position: absolute;
+	background: url(../img/coverall1.png) no-repeat;
+	width: 100%;
+	height: 80%;
+	background-size: 100% 100%;
+}
+.two-two-p1>img{
+	width: 85%;
+	height: 100%;
+}
+.two-two-p2{
+	position: absolute;
+	/* background-color: #D2691E; */
+	width: 50px;
+	height: 20px;
+	float: left;
+	top: 85%;
+	font-size: 15px;
+	color: black;
+}
+.two-two-p2:hover {
+	border-bottom: solid 1px gray;
+}
+.two-two-p3{
+	position: absolute;
+	/* background-color: #D2691E; */
+	width: 50px;
+	height: 20px;
+	float: left;
+	top: 100%;
+	font-size: 5px;
+	color: #666;
+}
+.two-two-p3:hover {
+	border-bottom: solid 1px gray;
+}
+/* 第二行第三个 */
+.two-three{
+	position: absolute;
+	left: 41%;
+	bottom: 7%;
+	width: 153px;
+	height: 155px;
+
+}
+
+.two-three-p1{
+	position: absolute;
+	background: url(../img/coverall1.png) no-repeat;
+	width: 100%;
+	height: 80%;
+	background-size: 100% 100%;
+}
+.two-three-p1>img{
+	width: 85%;
+	height: 100%;
+}
+.two-three-p2{
+	position: absolute;
+/* 	background-color: #D2691E; */	
+    width: 50px;
+	height: 20px;
+	float: left;
+	top: 85%;
+	font-size: 15px;
+	color: black;
+}
+.two-three-p2:hover {
+	border-bottom: solid 1px gray;
+}
+.two-three-p3{
+	position: absolute;
+	/* background-color: #D2691E; */
+	width: 50px;
+	height: 20px;
+	float: left;
+	top: 100%;
+	font-size: 5px;
+	color: #666;
+}
+.two-three-p3:hover {
+	border-bottom: solid 1px gray;
+}
+/* 第二行第四个 */
+.two-four{
+	position: absolute;
+	left: 61.5%;
+	bottom:7%;
+	width: 153px;
+	height: 155px;
+
+}
+
+.two-four-p1{
+	position: absolute;
+	background: url(../img/coverall1.png) no-repeat;
+	width: 100%;
+	height: 80%;
+	background-size: 100% 100%;
+}
+.two-four-p1>img{
+	width: 85%;
+	height: 100%;
+}
+.two-four-p2{
+	position: absolute;
+	/* background-color: #D2691E; */
+	width: 50px;
+	height: 20px;
+	float: left;
+	top: 85%;
+	font-size: 15px;
+	color: black;
+}
+.two-four-p2:hover {
+	border-bottom: solid 1px gray;
+}
+.two-four-p3{
+	position: absolute;
+	/* background-color: #D2691E; */
+	width: 50px;
+	height: 20px;
+	float: left;
+	top: 100%;
+	font-size: 5px;
+	color: #666;
+}
+.two-four-p3:hover {
+	border-bottom: solid 1px gray;
+}
+/* 下面是第二行第五个 */
+.two-five{
+	position: absolute;
+	right: 0%;
+	bottom: 7%;
+	width: 153px;
+	height: 155px;
+
+}
+
+.two-five-p1{
+	position: absolute;
+	background: url(../img/coverall1.png) no-repeat;
+	width: 100%;
+	height: 80%;
+	background-size: 100% 100%;
+}
+.two-five-p1>img{
+	width: 85%;
+	height: 100%;
+}
+.two-five-p2{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 20px;
+	float: left;
+	top: 85%;
+	font-size: 15px;
+	color: black;
+}
+.two-five-p2:hover {
+	border-bottom: solid 1px gray;
+}
+.two-five-p3{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 20px;
+	float: left;
+	top: 100%;
+	font-size: 5px;
+	color: #666;
+}
+.two-five-p3:hover {
+	border-bottom: solid 1px gray;
+}
+/* 下面是全部新碟 */
+/* 第一行第一个 */
+.down-one-one{
+	position: absolute;
+	top: 7%;
+	width: 153px;
+	height: 155px;
+
+}
+
+.down-one-one-p1{
+	position: absolute;
+	background: url(../img/coverall1.png) no-repeat;
+	width: 100%;
+	height: 80%;
+	background-size: 100% 100%;
+}
+.down-one-one-p1>img{
+	width: 85%;
+	height: 100%;
+}
+.down-one-one-p2{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 20px;
+	float: left;
+	top: 85%;
+	font-size: 15px;
+	color: black;
+}
+.down-one-one-p2:hover {
+	border-bottom: solid 1px gray;
+}
+.down-one-one-p3{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 15px;
+	float: left;
+	top: 100%;
+	font-size: 5px;
+	color: #666;
+}
+.down-one-one-p3:hover {
+	border-bottom: solid 1px gray;
+}
+/* 第一行第二个 */
+.down-one-two{
+	position: absolute;
+	left: 20.5%;
+	top: 7%;
+	width: 153px;
+	height: 155px;
+
+}
+
+.down-one-two-p1{
+	position: absolute;
+	background: url(../img/coverall1.png) no-repeat;
+	width: 100%;
+	height: 80%;
+	background-size: 100% 100%;
+}
+.down-one-two-p1>img{
+	width: 85%;
+	height: 100%;
+}
+.down-one-two-p2{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 20px;
+	float: left;
+	top: 85%;
+	font-size: 15px;
+	color: black;
+}
+.down-one-two-p2:hover {
+	border-bottom: solid 1px gray;
+}
+.down-one-two-p3{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 15px;
+	float: left;
+	top: 100%;
+	font-size: 5px;
+	color: #666;
+}
+.down-one-two-p3:hover {
+	border-bottom: solid 1px gray;
+}
+/* 第一行第三个 */
+.down-one-three{
+	position: absolute;
+	left: 41%;
+	top: 7%;
+	width: 153px;
+	height: 155px;
+
+}
+
+.down-one-three-p1{
+	position: absolute;
+	background: url(../img/coverall1.png) no-repeat;
+	width: 100%;
+	height: 80%;
+	background-size: 100% 100%;
+}
+.down-one-three-p1>img{
+	width: 85%;
+	height: 100%;
+}
+.down-one-three-p2{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 20px;
+	float: left;
+	top: 85%;
+	font-size: 15px;
+	color: black;
+}
+.down-one-three-p2:hover {
+	border-bottom: solid 1px gray;
+}
+.down-one-three-p3{
+	position: absolute;
+	/* background-color: #D2691E; */
+	width: 50px;
+	height: 15px;
+	float: left;
+	top: 100%;
+	font-size: 5px;
+	color: #666;
+}
+.down-one-three-p3:hover {
+	border-bottom: solid 1px gray;
+}
+/* 第一行第四个 */
+.down-one-four{
+	position: absolute;
+	left: 61.5%;
+	top: 7%;
+	width: 153px;
+	height: 155px;
+
+}
+
+.down-one-four-p1{
+	position: absolute;
+	background: url(../img/coverall1.png) no-repeat;
+	width: 100%;
+	height: 80%;
+	background-size: 100% 100%;
+}
+.down-one-four-p1>img{
+	width: 85%;
+	height: 100%;
+}
+.down-one-four-p2{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 20px;
+	float: left;
+	top: 85%;
+	font-size: 15px;
+	color: black;
+}
+.down-one-four-p2:hover {
+	border-bottom: solid 1px gray;
+}
+.down-one-four-p3{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 15px;
+	float: left;
+	top: 100%;
+	font-size: 5px;
+	color: #666;
+}
+.down-one-four-p3:hover {
+	border-bottom: solid 1px gray;
+}
+/* 第一行第五个 */
+.down-one-five{
+	position: absolute;
+	right: 0%;
+	top: 7%;
+	width: 153px;
+	height: 155px;
+
+}
+
+.down-one-five-p1{
+	position: absolute;
+	background: url(../img/coverall1.png) no-repeat;
+	width: 100%;
+	height: 80%;
+	background-size: 100% 100%;
+}
+.down-one-five-p1>img{
+	width: 85%;
+	height: 100%;
+}
+.down-one-five-p2{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 20px;
+	float: left;
+	top: 85%;
+	font-size: 15px;
+	color: black;
+}
+.down-one-five-p2:hover {
+	border-bottom: solid 1px gray;
+}
+.down-one-five-p3{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 15px;
+	float: left;
+	top: 100%;
+	font-size: 5px;
+	color: #666;
+}
+.down-one-five-p3:hover {
+	border-bottom: solid 1px gray;
+}
+/* 第二行第一个 */
+.down-two-one{
+	position: absolute;
+	top: 32%;
+	width: 153px;
+	height: 155px;
+
+}
+
+.down-two-one-p1{
+	position: absolute;
+	background: url(../img/coverall1.png) no-repeat;
+	width: 100%;
+	height: 80%;
+	background-size: 100% 100%;
+}
+.down-two-one-p1>img{
+	width: 85%;
+	height: 100%;
+}
+.down-two-one-p2{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 20px;
+	float: left;
+	top: 85%;
+	font-size: 15px;
+	color: black;
+}
+.down-two-one-p2:hover {
+	border-bottom: solid 1px gray;
+}
+.down-two-one-p3{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 15px;
+	float: left;
+	top: 100%;
+	font-size: 5px;
+	color: #666;
+}
+.down-two-one-p3:hover {
+	border-bottom: solid 1px gray;
+}
+/* 第二行第二个 */
+.down-two-two{
+	position: absolute;
+	top: 32%;
+	left: 20.5%;
+	width: 153px;
+	height: 155px;
+
+}
+
+.down-two-two-p1{
+	position: absolute;
+	background: url(../img/coverall1.png) no-repeat;
+	width: 100%;
+	height: 80%;
+	background-size: 100% 100%;
+}
+.down-two-two-p1>img{
+	width: 85%;
+	height: 100%;
+}
+.down-two-two-p2{
+	position: absolute;
+	/* background-color: #D2691E;  */
+	width: 50px;
+	height: 20px;
+	float: left;
+	top: 85%;
+	font-size: 15px;
+	color: black;
+}
+.down-two-two-p2:hover {
+	border-bottom: solid 1px gray;
+}
+.down-two-two-p3{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 15px;
+	float: left;
+	top: 100%;
+	font-size: 5px;
+	color: #666;
+}
+.down-two-two-p3:hover {
+	border-bottom: solid 1px gray;
+}
+/* 第二行第三个 */
+.down-two-three{
+	position: absolute;
+	top: 32%;
+	left: 41%;
+	width: 153px;
+	height: 155px;
+
+}
+
+.down-two-three-p1{
+	position: absolute;
+	background: url(../img/coverall1.png) no-repeat;
+	width: 100%;
+	height: 80%;
+	background-size: 100% 100%;
+}
+.down-two-three-p1>img{
+	width: 85%;
+	height: 100%;
+}
+.down-two-three-p2{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 20px;
+	float: left;
+	top: 85%;
+	font-size: 15px;
+	color: black;
+}
+.down-two-three-p2:hover {
+	border-bottom: solid 1px gray;
+}
+.down-two-three-p3{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 15px;
+	float: left;
+	top: 100%;
+	font-size: 5px;
+	color: #666;
+}
+.down-two-three-p3:hover {
+	border-bottom: solid 1px gray;
+}
+/* 第二行第四个 */
+.down-two-four{
+	position: absolute;
+	top: 32%;
+	left: 61.5%;
+	width: 153px;
+	height: 155px;
+
+}
+
+.down-two-four-p1{
+	position: absolute;
+	background: url(../img/coverall1.png) no-repeat;
+	width: 100%;
+	height: 80%;
+	background-size: 100% 100%;
+}
+.down-two-four-p1>img{
+	width: 85%;
+	height: 100%;
+}
+.down-two-four-p2{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 20px;
+	float: left;
+	top: 85%;
+	font-size: 15px;
+	color: black;
+}
+
+.down-two-four-p2:hover {
+	border-bottom: solid 1px gray;
+}
+.down-two-four-p3{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 15px;
+	float: left;
+	top: 100%;
+	font-size: 5px;
+	color: #666;
+}
+.down-two-four-p3:hover {
+	border-bottom: solid 1px gray;
+}
+/* 第二行第五个 */
+.down-two-five{
+	position: absolute;
+	top: 32%;
+	right: 0%;
+	width: 153px;
+	height: 155px;
+
+}
+
+.down-two-five-p1{
+	position: absolute;
+	background: url(../img/coverall1.png) no-repeat;
+	width: 100%;
+	height: 80%;
+	background-size: 100% 100%;
+}
+.down-two-five-p1>img{
+	width: 85%;
+	height: 100%;
+}
+.down-two-five-p2{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 20px;
+	float: left;
+	top: 85%;
+	font-size: 15px;
+	color: black;
+}
+.down-two-five-p2:hover {
+	border-bottom: solid 1px gray;
+}
+.down-two-five-p3{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 15px;
+	float: left;
+	top: 100%;
+	font-size: 5px;
+	color: #666;
+}
+.down-two-five-p3:hover {
+	border-bottom: solid 1px gray;
+}
+/* 第三行第一个 */
+.down-three-one{
+	position: absolute;
+	top: 57%;
+	width: 153px;
+	height: 155px;
+
+}
+
+.down-three-one-p1{
+	position: absolute;
+	background: url(../img/coverall1.png) no-repeat;
+	width: 100%;
+	height: 80%;
+	background-size: 100% 100%;
+}
+.down-three-one-p1>img{
+	width: 85%;
+	height: 100%;
+}
+.down-three-one-p2{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 20px;
+	float: left;
+	top: 85%;
+	font-size: 15px;
+	color: black;
+}
+.down-three-one-p2:hover {
+	border-bottom: solid 1px gray;
+}
+.down-three-one-p3{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 15px;
+	float: left;
+	top: 100%;
+	font-size: 5px;
+	color: #666;
+}
+.down-three-one-p3:hover {
+	border-bottom: solid 1px gray;
+}
+/* 第三行第二个 */
+.down-three-two{
+	position: absolute;
+	top: 57%;
+	left: 20.5%;
+	width: 153px;
+	height: 155px;
+
+}
+
+.down-three-two-p1{
+	position: absolute;
+	background: url(../img/coverall1.png) no-repeat;
+	width: 100%;
+	height: 80%;
+	background-size: 100% 100%;
+}
+.down-three-two-p1>img{
+	width: 85%;
+	height: 100%;
+}
+.down-three-two-p2{
+	position: absolute;
+	/* background-color: #D2691E;  */
+	width: 75px;
+	height: 20px;
+	float: left;
+	top: 85%;
+	font-size: 15px;
+	color: black;
+}
+.down-three-two-p2:hover {
+	border-bottom: solid 1px gray;
+}
+.down-three-two-p3{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 15px;
+	float: left;
+	top: 100%;
+	font-size: 5px;
+	color: #666;
+}
+.down-three-two-p3:hover {
+	border-bottom: solid 1px gray;
+}
+/* 第三行第三个 */
+.down-three-three{
+	position: absolute;
+	top: 57%;
+	left: 41%;
+	width: 153px;
+	height: 155px;
+
+}
+
+.down-three-three-p1{
+	position: absolute;
+	background: url(../img/coverall1.png) no-repeat;
+	width: 100%;
+	height: 80%;
+	background-size: 100% 100%;
+}
+.down-three-three-p1>img{
+	width: 85%;
+	height: 100%;
+}
+.down-three-three-p2{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 20px;
+	float: left;
+	top: 85%;
+	font-size: 15px;
+	color: black;
+}
+.down-three-three-p2:hover {
+	border-bottom: solid 1px gray;
+}
+.down-three-three-p3{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 15px;
+	float: left;
+	top: 100%;
+	font-size: 5px;
+	color: #666;
+}
+.down-three-three-p3:hover {
+	border-bottom: solid 1px gray;
+}
+
+
+
+
+/* 第三行第四个 */
+.down-three-four{
+	position: absolute;
+	top: 57%;
+	left: 61.5%;
+	width: 153px;
+	height: 155px;
+
+}
+
+.down-three-four-p1{
+	position: absolute;
+	background: url(../img/coverall1.png) no-repeat;
+	width: 100%;
+	height: 80%;
+	background-size: 100% 100%;
+}
+.down-three-four-p1>img{
+	width: 85%;
+	height: 100%;
+}
+.down-three-four-p2{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 20px;
+	float: left;
+	top: 85%;
+	font-size: 15px;
+	color: black;
+}
+.down-three-four-p2:hover {
+	border-bottom: solid 1px gray;
+}
+.down-three-four-p3{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 20px;
+	float: left;
+	top: 100%;
+	font-size: 5px;
+	color: #666;
+}
+.down-three-four-p3:hover {
+	border-bottom: solid 1px gray;
+}
+
+/* 第三行第五个 */
+.down-three-five{
+	position: absolute;
+	top: 57%;
+	right: 0%;
+	width: 153px;
+	height: 155px;
+
+}
+
+.down-three-five-p1{
+	position: absolute;
+	background: url(../img/coverall1.png) no-repeat;
+	width: 100%;
+	height: 80%;
+	background-size: 100% 100%;
+}
+.down-three-five-p1>img{
+	width: 85%;
+	height: 100%;
+}
+.down-three-five-p2{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 20px;
+	float: left;
+	top: 85%;
+	font-size: 15px;
+	color: black;
+}
+.down-three-five-p2:hover {
+	border-bottom: solid 1px gray;
+}
+
+.down-three-five-p3{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 15px;
+	float: left;
+	top: 100%;
+	font-size: 5px;
+	color: #666;
+}
+.down-three-five-p3:hover {
+	border-bottom: solid 1px gray;
+}
+
+/* 第四行第一个 */
+.down-four-one{
+	position: absolute;
+	top: 83%;
+	width: 153px;
+	height: 155px;
+
+}
+
+.down-four-one-p1{
+	position: absolute;
+	background: url(../img/coverall1.png) no-repeat;
+	width: 100%;
+	height: 80%;
+	background-size: 100% 100%;
+}
+.down-four-one-p1>img{
+	width: 85%;
+	height: 100%;
+}
+.down-four-one-p2{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 20px;
+	float: left;
+	top: 85%;
+	font-size: 15px;
+	color: black;
+}
+.down-four-one-p2:hover {
+	border-bottom: solid 1px gray;
+}
+.down-four-one-p3{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 15px;
+	float: left;
+	top: 100%;
+	font-size: 5px;
+	color: #666;
+}
+.down-four-one-p3:hover {
+	border-bottom: solid 1px gray;
+}
+/* 第四行第二 */
+.down-four-two{
+	position: absolute;
+	top: 83%;
+	left: 20.5%;
+	width: 153px;
+	height: 155px;
+
+}
+
+.down-four-two-p1{
+	position: absolute;
+	background: url(../img/coverall1.png) no-repeat;
+	width: 100%;
+	height: 80%;
+	background-size: 100% 100%;
+}
+.down-four-two-p1>img{
+	width: 85%;
+	height: 100%;
+}
+.down-four-two-p2{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 20px;
+	float: left;
+	top: 85%;
+	font-size: 15px;
+	color: black;
+}
+.down-four-two-p2:hover {
+	border-bottom: solid 1px gray;
+}
+.down-four-two-p3{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 15px;
+	float: left;
+	top: 100%;
+	font-size: 5px;
+	color: #666;
+}
+.down-four-two-p3:hover {
+	border-bottom: solid 1px gray;
+}
+
+/* 第四行第三个 */
+.down-four-three{
+	position: absolute;
+	top: 83%;
+	left: 41%;
+	width: 153px;
+	height: 155px;
+
+}
+
+.down-four-three-p1{
+	position: absolute;
+	background: url(../img/coverall1.png) no-repeat;
+	width: 100%;
+	height: 80%;
+	background-size: 100% 100%;
+}
+.down-four-three-p1>img{
+	width: 85%;
+	height: 100%;
+}
+.down-four-three-p2{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 20px;
+	float: left;
+	top: 85%;
+	font-size: 15px;
+	color: black;
+}
+.down-four-three-p2:hover {
+	border-bottom: solid 1px gray;
+}
+.down-four-three-p3{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 15px;
+	float: left;
+	top: 100%;
+	font-size: 5px;
+	color: #666;
+}
+.down-four-three-p3:hover {
+	border-bottom: solid 1px gray;
+}
+/* 第四行第四个 */
+.down-four-four{
+	position: absolute;
+	top: 83%;
+	left: 61.5%;
+	width: 153px;
+	height: 155px;
+
+}
+
+.down-four-four-p1{
+	position: absolute;
+	background: url(../img/coverall1.png) no-repeat;
+	width: 100%;
+	height: 80%;
+	background-size: 100% 100%;
+}
+.down-four-four-p1>img{
+	width: 85%;
+	height: 100%;
+}
+.down-four-four-p2{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 20px;
+	float: left;
+	top: 85%;
+	font-size: 15px;
+	color: black;
+}
+.down-four-four-p2:hover {
+	border-bottom: solid 1px gray;
+}
+.down-four-four-p3{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 15px;
+	float: left;
+	top: 100%;
+	font-size: 5px;
+	color: #666;
+}
+.down-four-four-p3:hover {
+	border-bottom: solid 1px gray;
+}
+/* 第四行第五个 */
+.down-four-five{
+	position: absolute;
+	top: 83%;
+	right: 0%;
+	width: 153px;
+	height: 155px;
+
+}
+
+.down-four-five-p1{
+	position: absolute;
+	background: url(../img/coverall1.png) no-repeat;
+	width: 100%;
+	height: 80%;
+	background-size: 100% 100%;
+}
+.down-four-five-p1>img{
+	width: 85%;
+	height: 100%;
+}
+.down-four-five-p2{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 20px;
+	float: left;
+	top: 85%;
+	font-size: 15px;
+	color: black;
+}
+.down-four-five-p2:hover {
+	border-bottom: solid 1px gray;
+}
+.down-four-five-p3{
+	position: absolute;
+/* 	background-color: #D2691E; */
+	width: 50px;
+	height: 15px;
+	float: left;
+	top: 100%;
+	font-size: 5px;
+	color: #666;
+}
+.down-four-five-p3:hover {
+	border-bottom: solid 1px gray;
+}
+
+.kong{
+	position: absolute;
+	background-color:white;
+	width: 100%;
+	height: 10%;
+	bottom: -11%;
+	display: block;
+}
+
+#player{
+	position: fixed;
+	width: 100%;
+	height: 13%;
+	background-color:#a2e1d4;
+	bottom: 0%;
+	left: 0%;
+	display: none;
+	
+}
+
+.playbar_before{
+	/* background-color: red; */
+	position: absolute;
+	top: -5%;
+	left: 38%;
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+}
+
+
+.playbar_next{
+	/* background-color: red; */
+	position: absolute;
+	top: -5%;
+	left: 57%;
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+}
+
+
+
+#playbar_start{
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	left: 47%;
+	top: -15%;
+	cursor: pointer;
+}
+
+.pic{
+	position: absolute;
+	width: 90px;
+	height: 90px;
+	left: 0%;
+	top: 0%;
+}
+
+#all_time{
+	position: absolute;
+	/* width: 400px; */
+	height: 4px;
+	background-color: #000000;
+	left: 34.8%;
+	top:83% ;
+	border-radius: 50px;
+	cursor: pointer;
+}
+
+#now_time{
+	position: absolute;
+	background-color: #C20C0C;
+	width: 0px;
+	height: 4px;
+	left: 0%;
+	bottom: 30%;
+	top: 1%;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+}
+
+.musicname{
+	position: absolute;
+	left: 9%;
+	top: 11%;
+	font-size: 18px;
+	color: black;
+}
+
+.signer{
+	position: absolute;
+	left: 9%;
+	top: 50%;
+	font-size: 20px;
+	color: gray;
+}
+
+
+
+#progress{
+	position: absolute;
+	left: 47%;
+	top: 54%;
+	font-size: 13px;
+	color: black;
+}
+
+.playbar_volume{
+	position: absolute;
+	width: 60px;
+	height: 50px;
+	right: 16%;
+	top:26%;
+}
+
+#all_volume{
+	position: absolute;
+	background-color: black;
+	width: 150px;
+	height: 4px;
+	top: 55%;
+	right: 5%;
+	cursor: pointer;
+	border-radius: 50px;
+}
+
+#now_volume{
+	position: absolute;
+	height: 4px;
+	width: 50%;
+	background-color: #C20C0C;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+}
+
+/* 以上是播放器的样式内容 */
