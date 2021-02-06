@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/test.css">
+</head>
+<body>
+	<!-- <img id="musicBtn" onclick="play()" src="img/musicBtn.png" >
+	<audio id="music" autoplay="autoplay" loop="loop" src="img/CMJ%20-%20所念皆星河.mp3"></audio> -->
+	<!-- 计时器 -->
+	<div class="jiShiQi hidden">
+		<img class='zhong' src="img/zhong.png" >
+		<h3></h3>
+	</div>
+	<div id="app">
+		<div class="page page1">
+			<img src="img/p1_bj%20(1).png" alt="" class="p1 p1_bj1">
+			<img src="img/p1_bj%20(0).jpg" alt="" class="p1 p1_bj2">
+			<img src="img/p1_bj%20(5).png" alt="" class="p1 p1_bj3">
+			<img src="img/p1_bj%20(6).png" alt="" class="p1 p1_bj4">
+			<img src="img/p1_bj%20(2).png" alt="" class="p1 p1_bj5">
+			<img src="img/p1_bj%20(3).png" alt="" class="p1 p1_bj6">
+			<img src="img/p1_bj%20(4).png" alt="" class="p1 p1_bj7">
+		</div>
+		<div class="page page2">																<!-- 这里需要把类名修改成每一页的类名 -->
+			<img src="img/p2_bj1.jpg" alt="" 						class="beiJing1"> 
+			<img src="img/p2_bj2.png" alt="" 						class="beiJing2">
+			<img src="img/p2_bj3.png" alt="" 						class="beiJing3">
+			<div 							 						class="wenTiQuYu">
+				<div 												class="wenTiTouBu">
+					<img src="img/p2_tm.png" 						class='wenTiTuPian'>
+					<h3          			 						class='tiHao'>
+						第一题
+					</h3>
+				</div>
+				<div 						 						class="wenTiShenTi">
+					<h3                      						class='wenTi'>
+						世界上最大的沙漠是什么？
+					</h3>
+				</div>
+			</div>
+			<div 													class="xuanXiangQuYu">
+				<div 												class="xuanXiang1   fanYe   rightOptionp2">
+					<img src="img/p2_da.png" 						class='xuanXiangDeTuPian'	 >
+					<h3         									class='xuanXiangDeNeiRong'>
+						撒哈拉沙漠
+					</h3>
+				</div>
+				<div 												class="xuanXiang2   fanYe   falseOption1p2">
+					<img src="img/p2_da.png"    					class='xuanXiangDeTuPian'>
+					<h3                         					class='xuanXiangDeNeiRong'>
+						阿拉伯沙漠
+					</h3>
+				</div>
+				<div 												class="xuanXiang3   fanYe   falseOption2p2"   >
+					<img src="img/p2_da.png"  						class='xuanXiangDeTuPian'>
+					<h3                       						class='xuanXiangDeNeiRong'>
+						戈壁沙漠
+					</h3>
+				</div>
+				<div 												class="xuanXiang4   fanYe   falseOption3p2">
+					<img src="img/p2_da.png"       					class='xuanXiangDeTuPian'>
+					<h3                            					class='xuanXiangDeNeiRong'>
+						塔克拉马干沙漠
+					</h3> 
+				</div>
+			</div>
+			<!-- <div class="jiShiQi">
+				<h3 class='xiaBu'></h2>
+			</div> -->
+			<img src="img/right.png" class='p2_true'>
+			<img src="img/false.png" class="p2_false1">
+			<img src="img/false.png" class="p2_false2">
+			<img src="img/false.png" class="p2_false3">										<!-- 这里需要把类名修改成每一页对应的类名 -->
+		</div>
+		
+		
+		<div class="page page3">																<!-- 这里需要把类名修改成每一页的类名 -->
+			<img src="img/p2_bj1.jpg" alt="" 						class="beiJing1"> 
+			<img src="img/p2_bj2.png" alt="" 						class="beiJing2">
+			<img src="img/p2_bj3.png" alt="" 						class="beiJing3">
+			<div 							 						class="wenTiQuYu">
+				<div 												class="wenTiTouBu">
+					<img src="img/p2_tm.png" 						class='wenTiTuPian'>
+					<h3          			 						class='tiHao'>
+						第二题
+					</h3>
+				</div>
+				<div 						 						class="wenTiShenTi">
+					<h3                      						class='wenTi'>
+						中国的省、市、直辖市共有几个？
+					</h3>
+				</div>
+			</div>
+			<div 													class="xuanXiangQuYu">
+				<div 												class="xuanXiang1   fanYe   falseOption1p3">
+					<img src="img/p2_da.png" 						class='xuanXiangDeTuPian'	 >
+					<h3         									class='xuanXiangDeNeiRong'>
+						31个
+					</h3>
+				</div>
+				<div 												class="xuanXiang2   fanYe   rightOptionp3">
+					<img src="img/p2_da.png"    					class='xuanXiangDeTuPian'>
+					<h3                         					class='xuanXiangDeNeiRong'>
+						32个
+					</h3>
+				</div>
+				<div 												class="xuanXiang3   fanYe   falseOption2p3"   >
+					<img src="img/p2_da.png"  						class='xuanXiangDeTuPian'>
+					<h3                       						class='xuanXiangDeNeiRong'>
+						30个
+					</h3>
+				</div>
+				<div 												class="xuanXiang4   fanYe   falseOption3p3">
+					<img src="img/p2_da.png"       					class='xuanXiangDeTuPian'>
+					<h3                            					class='xuanXiangDeNeiRong'>
+						29个
+					</h3> 
+				</div>
+			</div>
+			<!-- <div class="jiShiQi">
+				<h3 class='xiaBu'></h2>
+			</div> -->
+			<img src="img/right.png" class='p3_true'>
+			<img src="img/false.png" class="p3_false1">
+			<img src="img/false.png" class="p3_false2">
+			<img src="img/false.png" class="p3_false3">										<!-- 这里需要把类名修改成每一页对应的类名 -->
+		</div>
+		
+		
+		<div class="page page4">																<!-- 这里需要把类名修改成每一页的类名 -->
+			<img src="img/p2_bj1.jpg" alt="" 						class="beiJing1"> 
+			<img src="img/p2_bj2.png" alt="" 						class="beiJing2">
+			<img src="img/p2_bj3.png" alt="" 						class="beiJing3">
+			<div 							 						class="wenTiQuYu">
+				<div 												class="wenTiTouBu">
+					<img src="img/p2_tm.png" 						class='wenTiTuPian'>
+					<h3          			 						class='tiHao'>
+						第三题
+					</h3>
+				</div>
+				<div 						 						class="wenTiShenTi">
+					<h3                      						class='wenTi'>
+						地动仪被发明在哪个朝代？
+					</h3>
+				</div>
+			</div>
+			<div 													class="xuanXiangQuYu">
+				<div 												class="xuanXiang1   fanYe   falseOption1p4">
+					<img src="img/p2_da.png" 						class='xuanXiangDeTuPian'	 >
+					<h3         									class='xuanXiangDeNeiRong'>
+						西汉
+					</h3>
+				</div>
+				<div 												class="xuanXiang2   fanYe   rightOptionp4">
+					<img src="img/p2_da.png"    					class='xuanXiangDeTuPian'>
+					<h3                         					class='xuanXiangDeNeiRong'>
+						东汉
+					</h3>
+				</div>
+				<div 												class="xuanXiang3   fanYe   falseOption2p4"   >
+					<img src="img/p2_da.png"  						class='xuanXiangDeTuPian'>
+					<h3                       						class='xuanXiangDeNeiRong'>
+						西晋
+					</h3>
+				</div>
+				<div 												class="xuanXiang4   fanYe   falseOption3p4">
+					<img src="img/p2_da.png"       					class='xuanXiangDeTuPian'>
+					<h3                            					class='xuanXiangDeNeiRong'>
+						东晋
+					</h3> 
+				</div>
+			</div>
+			<!-- <div class="jiShiQi">
+				<h3 class='xiaBu'></h2>
+			</div> -->
+			<img src="img/right.png" class='p4_true'>
+			<img src="img/false.png" class="p4_false1">
+			<img src="img/false.png" class="p4_false2">
+			<img src="img/false.png" class="p4_false3">										<!-- 这里需要把类名修改成每一页对应的类名 -->
+		</div>
+		
+		
+		
+		<div class="page page5">																<!-- 这里需要把类名修改成每一页的类名 -->
+			<img src="img/p2_bj1.jpg" alt="" 						class="beiJing1"> 
+			<img src="img/p2_bj2.png" alt="" 						class="beiJing2">
+			<img src="img/p2_bj3.png" alt="" 						class="beiJing3">
+			<div 							 						class="wenTiQuYu">
+				<div 												class="wenTiTouBu">
+					<img src="img/p2_tm.png" 						class='wenTiTuPian'>
+					<h3          			 						class='tiHao'>
+						第四题
+					</h3>
+				</div>
+				<div 						 						class="wenTiShenTi">
+					<h3                      						class='wenTi'>
+						属于四大明绣的是？
+					</h3>
+				</div>
+			</div>
+			<div 													class="xuanXiangQuYu">
+				<div 												class="xuanXiang1   fanYe   rightOptionp5">
+					<img src="img/p2_da.png" 						class='xuanXiangDeTuPian'	 >
+					<h3         									class='xuanXiangDeNeiRong'>
+						蜀绣
+					</h3>
+				</div>
+				<div 												class="xuanXiang2   fanYe   falseOption1p5">
+					<img src="img/p2_da.png"    					class='xuanXiangDeTuPian'>
+					<h3                         					class='xuanXiangDeNeiRong'>
+						鄂绣
+					</h3>
+				</div>
+				<div 												class="xuanXiang3   fanYe   falseOption2p5"   >
+					<img src="img/p2_da.png"  						class='xuanXiangDeTuPian'>
+					<h3                       						class='xuanXiangDeNeiRong'>
+						豫绣
+					</h3>
+				</div>
+				<div 												class="xuanXiang4   fanYe   falseOption3p5">
+					<img src="img/p2_da.png"       					class='xuanXiangDeTuPian'>
+					<h3                            					class='xuanXiangDeNeiRong'>
+						婧绣
+					</h3> 
+				</div>
+			</div>
+			<!-- <div class="jiShiQi">
+				<h3 class='xiaBu'></h2>
+			</div> -->
+			<img src="img/right.png" class='p5_true'>
+			<img src="img/false.png" class="p5_false1">
+			<img src="img/false.png" class="p5_false2">
+			<img src="img/false.png" class="p5_false3">										<!-- 这里需要把类名修改成每一页对应的类名 -->
+		</div>
+		
+		
+		<div class="page page6">																<!-- 这里需要把类名修改成每一页的类名 -->
+			<img src="img/p2_bj1.jpg" alt="" 						class="beiJing1"> 
+			<img src="img/p2_bj2.png" alt="" 						class="beiJing2">
+			<img src="img/p2_bj3.png" alt="" 						class="beiJing3">
+			<div 							 						class="wenTiQuYu">
+				<div 												class="wenTiTouBu">
+					<img src="img/p2_tm.png" 						class='wenTiTuPian'>
+					<h3          			 						class='tiHao'>
+						第五题
+					</h3>
+				</div>
+				<div 						 						class="wenTiShenTi">
+					<h3                      						class='wenTi'>
+						澳大利亚的国宝是什么动物？
+					</h3>
+				</div>
+			</div>
+			<div 													class="xuanXiangQuYu">
+				<div 												class="xuanXiang1   fanYe   falseOption1p6">
+					<img src="img/p2_da.png" 						class='xuanXiangDeTuPian'	 >
+					<h3         									class='xuanXiangDeNeiRong'>
+						袋鼠
+					</h3>
+				</div>
+				<div 												class="xuanXiang2   fanYe   rightOptionp6">
+					<img src="img/p2_da.png"    					class='xuanXiangDeTuPian'>
+					<h3                         					class='xuanXiangDeNeiRong'>
+						鹰
+					</h3>
+				</div>
+				<div 												class="xuanXiang3   fanYe   falseOption2p6"   >
+					<img src="img/p2_da.png"  						class='xuanXiangDeTuPian'>
+					<h3                       						class='xuanXiangDeNeiRong'>
+						熊猫
+					</h3>
+				</div>
+				<div 												class="xuanXiang4   fanYe   falseOption3p6">
+					<img src="img/p2_da.png"       					class='xuanXiangDeTuPian'>
+					<h3                            					class='xuanXiangDeNeiRong'>
+						树袋熊
+					</h3> 
+				</div>
+			</div>
+			<!-- <div class="jiShiQi">
+				<h3 class='xiaBu'></h2>
+			</div> -->
+			<img src="img/right.png" class='p6_true'>
+			<img src="img/false.png" class="p6_false1">
+			<img src="img/false.png" class="p6_false2">
+			<img src="img/false.png" class="p6_false3">										<!-- 这里需要把类名修改成每一页对应的类名 -->
+		</div>
+		<div class="page page7">																<!-- 这里需要把类名修改成每一页的类名 -->
+			<img src="img/p2_bj1.jpg" alt="" 						class="beiJing1"> 
+			<img src="img/p2_bj2.png" alt="" 						class="beiJing2">
+			<img src="img/p2_bj3.png" alt="" 						class="beiJing3">
+			<div 							 						class="wenTiQuYu">
+				<div 												class="wenTiTouBu">
+					<img src="img/p2_tm.png" 						class='wenTiTuPian'>
+					<h3          			 						class='tiHao'>
+						第六题
+					</h3>
+				</div>
+				<div 						 						class="wenTiShenTi">
+					<h3                      						class='wenTi'>
+						耄耋之年指的是？
+					</h3>
+				</div>
+			</div>
+			<div 													class="xuanXiangQuYu">
+				<div 												class="xuanXiang1   fanYe   falseOption1p7">
+					<img src="img/p2_da.png" 						class='xuanXiangDeTuPian'	 >
+					<h3         									class='xuanXiangDeNeiRong'>
+						五六十岁
+					</h3>
+				</div>
+				<div 												class="xuanXiang2   fanYe   falseOption2p7">
+					<img src="img/p2_da.png"    					class='xuanXiangDeTuPian'>
+					<h3                         					class='xuanXiangDeNeiRong'>
+						六七十岁
+					</h3>
+				</div>
+				<div 												class="xuanXiang3   fanYe   falseOption3p7"   >
+					<img src="img/p2_da.png"  						class='xuanXiangDeTuPian'>
+					<h3                       						class='xuanXiangDeNeiRong'>
+						七八十岁
+					</h3>
+				</div>
+				<div 												class="xuanXiang4   fanYe   rightOptionp7">
+					<img src="img/p2_da.png"       					class='xuanXiangDeTuPian'>
+					<h3                            					class='xuanXiangDeNeiRong'>
+						八九十岁
+					</h3> 
+				</div>
+			</div>
+			
+			<img src="img/right.png" class='p7_true'>
+			<img src="img/false.png" class="p7_false1">
+			<img src="img/false.png" class="p7_false2">
+			<img src="img/false.png" class="p7_false3">										<!-- 这里需要把类名修改成每一页对应的类名 -->
+		</div>
+		<div class="page page8">																<!-- 这里需要把类名修改成每一页的类名 -->
+			<img src="img/p2_bj1.jpg" alt="" 						class="beiJing1"> 
+			<img src="img/p2_bj2.png" alt="" 						class="beiJing2">
+			<img src="img/p2_bj3.png" alt="" 						class="beiJing3">
+			<div 							 						class="wenTiQuYu">
+				<div 												class="wenTiTouBu">
+					<img src="img/p2_tm.png" 						class='wenTiTuPian'>
+					<h3          			 						class='tiHao'>
+						第七题
+					</h3>
+				</div>
+				<div 						 						class="wenTiShenTi">
+					<h3                      						class='wenTi'>
+						李清照词中：人比黄花瘦的黄花指？
+					</h3>
+				</div>
+			</div>
+			<div 													class="xuanXiangQuYu">
+				<div 												class="xuanXiang1   fanYe   falseOption1p8">
+					<img src="img/p2_da.png" 						class='xuanXiangDeTuPian'	 >
+					<h3         									class='xuanXiangDeNeiRong'>
+						腊梅花
+					</h3>
+				</div>
+				<div 												class="xuanXiang2   fanYe   falseOption2p8">
+					<img src="img/p2_da.png"    					class='xuanXiangDeTuPian'>
+					<h3                         					class='xuanXiangDeNeiRong'>
+						小黄花
+					</h3>
+				</div>
+				<div 												class="xuanXiang3   fanYe   falseOption3p8"   >
+					<img src="img/p2_da.png"  						class='xuanXiangDeTuPian'>
+					<h3                       						class='xuanXiangDeNeiRong'>
+						丁香花
+					</h3>
+				</div>
+				<div 												class="xuanXiang4   fanYe   rightOptionp8">
+					<img src="img/p2_da.png"       					class='xuanXiangDeTuPian'>
+					<h3                            					class='xuanXiangDeNeiRong'>
+						菊花
+					</h3> 
+				</div>
+			</div>
+			
+			<img src="img/right.png" class='p8_true'>
+			<img src="img/false.png" class="p8_false1">
+			<img src="img/false.png" class="p8_false2">
+			<img src="img/false.png" class="p8_false3">										<!-- 这里需要把类名修改成每一页对应的类名 -->
+		</div>
+		<div class="page page9">																<!-- 这里需要把类名修改成每一页的类名 -->
+			<img src="img/p2_bj1.jpg" alt="" 						class="beiJing1"> 
+			<img src="img/p2_bj2.png" alt="" 						class="beiJing2">
+			<img src="img/p2_bj3.png" alt="" 						class="beiJing3">
+			<div 							 						class="wenTiQuYu">
+				<div 												class="wenTiTouBu">
+					<img src="img/p2_tm.png" 						class='wenTiTuPian'>
+					<h3          			 						class='tiHao'>
+						第八题
+					</h3>
+				</div>
+				<div 						 						class="wenTiShenTi">
+					<h3                      						class='wenTi'>
+						一日不见如隔三秋的三秋是指？
+					</h3>
+				</div>
+			</div>
+			<div 													class="xuanXiangQuYu">
+				<div 												class="xuanXiang1   fanYe   falseOption1p9">
+					<img src="img/p2_da.png" 						class='xuanXiangDeTuPian'	 >
+					<h3         									class='xuanXiangDeNeiRong'>
+						三个月
+					</h3>
+				</div>
+				<div 												class="xuanXiang2   fanYe   falseOption2p9">
+					<img src="img/p2_da.png"    					class='xuanXiangDeTuPian'>
+					<h3                         					class='xuanXiangDeNeiRong'>
+						三年
+					</h3>
+				</div>
+				<div 												class="xuanXiang3   fanYe   rightOptionp9"   >
+					<img src="img/p2_da.png"  						class='xuanXiangDeTuPian'>
+					<h3                       						class='xuanXiangDeNeiRong'>
+						三个季度
+					</h3>
+				</div>
+				<div 												class="xuanXiang4   fanYe   falseOption3p9">
+					<img src="img/p2_da.png"       					class='xuanXiangDeTuPian'>
+					<h3                            					class='xuanXiangDeNeiRong'>
+						三十年
+					</h3> 
+				</div>
+			</div>
+			
+			<img src="img/right.png" class='p9_true'>
+			<img src="img/false.png" class="p9_false1">
+			<img src="img/false.png" class="p9_false2">
+			<img src="img/false.png" class="p9_false3">										<!-- 这里需要把类名修改成每一页对应的类名 -->
+		</div>
+		<div class="page page10">																<!-- 这里需要把类名修改成每一页的类名 -->
+			<img src="img/p2_bj1.jpg" alt="" 						class="beiJing1"> 
+			<img src="img/p2_bj2.png" alt="" 						class="beiJing2">
+			<img src="img/p2_bj3.png" alt="" 						class="beiJing3">
+			<div 							 						class="wenTiQuYu">
+				<div 												class="wenTiTouBu">
+					<img src="img/p2_tm.png" 						class='wenTiTuPian'>
+					<h3          			 						class='tiHao'>
+						第九题
+					</h3>
+				</div>
+				<div 						 						class="wenTiShenTi">
+					<h3                      						class='wenTi'>
+						“鸿雁传书”源自以下的哪个故事？
+					</h3>
+				</div>
+			</div>
+			<div 													class="xuanXiangQuYu">
+				<div 												class="xuanXiang1   fanYe   falseOption1p10">
+					<img src="img/p2_da.png" 						class='xuanXiangDeTuPian'	 >
+					<h3         									class='xuanXiangDeNeiRong'>
+						文姬归汉
+					</h3>
+				</div>
+				<div 												class="xuanXiang2   fanYe   falseOption2p10">
+					<img src="img/p2_da.png"    					class='xuanXiangDeTuPian'>
+					<h3                         					class='xuanXiangDeNeiRong'>
+						霸王别姬
+					</h3>
+				</div>
+				<div 												class="xuanXiang3   fanYe   rightOptionp10"   >
+					<img src="img/p2_da.png"  						class='xuanXiangDeTuPian'>
+					<h3                       						class='xuanXiangDeNeiRong'>
+						苏武牧羊
+					</h3>
+				</div>
+				<div 												class="xuanXiang4   fanYe   falseOption3p10">
+					<img src="img/p2_da.png"       					class='xuanXiangDeTuPian'>
+					<h3                            					class='xuanXiangDeNeiRong'>
+						楚汉相争
+					</h3> 
+				</div>
+			</div>
+			
+			<img src="img/right.png" class='p10_true'>
+			<img src="img/false.png" class="p10_false1">
+			<img src="img/false.png" class="p10_false2">
+			<img src="img/false.png" class="p10_false3">										<!-- 这里需要把类名修改成每一页对应的类名 -->
+		</div>
+		
+		<div class="page page11">																<!-- 这里需要把类名修改成每一页的类名 -->
+			<img src="img/p2_bj1.jpg" alt="" 						class="beiJing1"> 
+			<img src="img/p2_bj2.png" alt="" 						class="beiJing2">
+			<img src="img/p2_bj3.png" alt="" 						class="beiJing3">
+			<div 							 						class="wenTiQuYu">
+				<div 												class="wenTiTouBu">
+					<img src="img/p2_tm.png" 						class='wenTiTuPian'>
+					<h3          			 						class='tiHao'>
+						第十题
+					</h3>
+				</div>
+				<div 						 						class="wenTiShenTi">
+					<h3                      						class='wenTi'>
+						庐山位于一下哪个省份？
+					</h3>
+				</div>
+			</div>
+			<div 													class="xuanXiangQuYu">
+				<div 												class="xuanXiang1   fanYe  rightOptionp11">
+					<img src="img/p2_da.png" 						class='xuanXiangDeTuPian'	 >
+					<h3         									class='xuanXiangDeNeiRong'>
+						江西
+					</h3>
+				</div>
+				<div 												class="xuanXiang2   fanYe   falseOption1p11">
+					<img src="img/p2_da.png"    					class='xuanXiangDeTuPian'>
+					<h3                         					class='xuanXiangDeNeiRong'>
+						山东
+					</h3>
+				</div>
+				<div 												class="xuanXiang3   fanYe  falseOption2p11"   >
+					<img src="img/p2_da.png"  						class='xuanXiangDeTuPian'>
+					<h3                       						class='xuanXiangDeNeiRong'>
+						安徽
+					</h3>
+				</div>
+				<div 												class="xuanXiang4   fanYe   falseOption3p11">
+					<img src="img/p2_da.png"       					class='xuanXiangDeTuPian'>
+					<h3                            					class='xuanXiangDeNeiRong'>
+						四川
+					</h3> 
+				</div>
+			</div>
+			
+			<img src="img/right.png" class='p11_true'>
+			<img src="img/false.png" class="p11_false1">
+			<img src="img/false.png" class="p11_false2">
+			<img src="img/false.png" class="p11_false3">										<!-- 这里需要把类名修改成每一页对应的类名 -->
+		</div>
+		
+		
+		<div class="page page12">																<!-- 这里需要把类名修改成每一页的类名 -->
+			<img src="img/p2_bj1.jpg" alt="" 						class="beiJing1"> 
+			<img src="img/p2_bj2.png" alt="" 						class="beiJing2">
+			<img src="img/p2_bj3.png" alt="" 						class="beiJing3">
+			<div 							 						class="wenTiQuYu">
+				<div 												class="wenTiTouBu">
+					<img src="img/p2_tm.png" 						class='wenTiTuPian'>
+					<h3          			 						class='tiHao'>
+						第十一题
+					</h3>
+				</div>
+				<div 						 						class="wenTiShenTi">
+					<h3                      						class='wenTi'>
+						以下哪条是中国最长的河？
+					</h3>
+				</div>
+			</div>
+			<div 													class="xuanXiangQuYu">
+				<div 												class="xuanXiang1   fanYe  falseOption1p12">
+					<img src="img/p2_da.png" 						class='xuanXiangDeTuPian'	 >
+					<h3         									class='xuanXiangDeNeiRong'>
+						黄河
+					</h3>
+				</div>
+				<div 												class="xuanXiang2   fanYe   falseOption2p12">
+					<img src="img/p2_da.png"    					class='xuanXiangDeTuPian'>
+					<h3                         					class='xuanXiangDeNeiRong'>
+						黑龙江
+					</h3>
+				</div>
+				<div 												class="xuanXiang3   fanYe  rightOptionp12"   >
+					<img src="img/p2_da.png"  						class='xuanXiangDeTuPian'>
+					<h3                       						class='xuanXiangDeNeiRong'>
+						长江 
+					</h3>
+				</div>
+				<div 												class="xuanXiang4   fanYe   falseOption3p12">
+					<img src="img/p2_da.png"       					class='xuanXiangDeTuPian'>
+					<h3                            					class='xuanXiangDeNeiRong'>
+						雅鲁藏布江
+					</h3> 
+				</div>
+			</div>
+			
+			<img src="img/right.png" class='p12_true'>
+			<img src="img/false.png" class="p12_false1">
+			<img src="img/false.png" class="p12_false2">
+			<img src="img/false.png" class="p12_false3">										<!-- 这里需要把类名修改成每一页对应的类名 -->
+		</div>
+		
+		<div class="page page13">																<!-- 这里需要把类名修改成每一页的类名 -->
+			<img src="img/p2_bj1.jpg" alt="" 						class="beiJing1"> 
+			<img src="img/p2_bj2.png" alt="" 						class="beiJing2">
+			<img src="img/p2_bj3.png" alt="" 						class="beiJing3">
+			<div 							 						class="wenTiQuYu">
+				<div 												class="wenTiTouBu">
+					<img src="img/p2_tm.png" 						class='wenTiTuPian'>
+					<h3          			 						class='tiHao'>
+						第十二题
+					</h3>
+				</div>
+				<div 						 						class="wenTiShenTi">
+					<h3                      						class='wenTi'>
+						《史记》的作者是？
+					</h3>
+				</div>
+			</div>
+			<div 													class="xuanXiangQuYu">
+				<div 												class="xuanXiang1   fanYe  falseOption1p13">
+					<img src="img/p2_da.png" 						class='xuanXiangDeTuPian'	 >
+					<h3         									class='xuanXiangDeNeiRong'>
+						屈原
+					</h3>
+				</div>
+				<div 												class="xuanXiang2   fanYe   rightOptionp13">
+					<img src="img/p2_da.png"    					class='xuanXiangDeTuPian'>
+					<h3                         					class='xuanXiangDeNeiRong'>
+						司马迁
+					</h3>
+				</div>
+				<div 												class="xuanXiang3   fanYe   falseOption2p13"   >
+					<img src="img/p2_da.png"  						class='xuanXiangDeTuPian'>
+					<h3                       						class='xuanXiangDeNeiRong'>
+					     李白 
+					</h3>
+				</div>
+				<div 												class="xuanXiang4   fanYe   falseOption3p13">
+					<img src="img/p2_da.png"       					class='xuanXiangDeTuPian'>
+					<h3                            					class='xuanXiangDeNeiRong'>
+						杜甫
+					</h3> 
+				</div>
+			</div>
+			
+			<img src="img/right.png" class='p13_true'>
+			<img src="img/false.png" class="p13_false1">
+			<img src="img/false.png" class="p13_false2">
+			<img src="img/false.png" class="p13_false3">										<!-- 这里需要把类名修改成每一页对应的类名 -->
+		</div>
+		
+		<!-- 最后一页 -->
+		<div class="page page14">
+			<div id="up">
+				<img class="camer2" src="img/camera2.png" > 
+			</div>
+			<div id="lastone">
+				<img class="carmera"    src="img/carmen3.png" alt="">
+				<img class="pic"  src="img/pic1.png" alt="">
+				<img class="shadow" src="img/shadow.png" alt="">
+				<img class="back" src="img/back.png" alt="">
+				<img class="coin"  src="img/coin.png" alt="">
+				<p class="scale">
+					10
+				</p>
+				<p class="again">
+				    再玩一次
+				</p>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+	</div>
+	
+	<img id="musicBtn" onclick="play()" src="img/musicBtn.png" >
+	<audio id="music" autoplay="autoplay" loop="loop" src="img/CMJ%20-%20所念皆星河.mp3"></audio>
+	<audio id="musicright" autoplay="autoplay"  src="<!-- img/回答正确.mp3 -->"></audio>
+	<audio id="musicfalse" autoplay="autoplay"  src="<!-- img/回答错误.mp3 -->"></audio>
+</body>
+<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/test.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	// 音乐开关
+	function play(){
+		if(document.getElementById('music').paused){
+			document.getElementById('music').play();
+		}else{
+			document.getElementById('music').pause();
+		}
+	}
+</script>
+</html>

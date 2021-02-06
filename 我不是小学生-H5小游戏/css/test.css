@@ -1,0 +1,751 @@
+@charset "utf-8";
+*{margin: 0;padding: 0;}
+/* 定位 */
+
+html,body,#app,.page{
+	width: 100%;
+	height: 100%;
+}
+div,img,h3,.jiShiQi{
+	position: absolute;
+}
+																											/* 音乐按钮图标 */
+#musicBtn{
+	position:fixed;
+	width: 17%;
+	z-index: 99;
+	right: 5%;
+	top:3%;
+	/* background-color: #000000; */
+	animation: musicBtn 20s linear infinite;
+}
+@keyframes musicBtn{
+	from{transform: rotate(0);}
+	to{transform: rotate(360deg);}
+}
+
+																											/* 第一页从这里开始 */
+.page1 {
+	background-color: black;
+}
+.p1_bj1,.p1_bj2 {
+	width: 100%;
+	height: 100%;
+}
+.p1_bj1 {
+	/* position: absolute; */
+	top: 60%;
+	height: 40%;
+	z-index: 1;
+	animation: p1bj1downIn 1s both linear;
+}
+@keyframes p1bj1downIn {
+	from {
+		transform: translate(0, 100%);
+	}
+
+	to {
+		transform: translate(0, 0);
+	}
+}
+.p1_bj2 {
+	z-index: 0;
+	animation: p1bj2topIn 1s both linear 1s;
+}
+@keyframes p1bj2topIn {
+	from {transform: translate(0, -120%);}
+
+	25% {transform: translate(0, 10%);}
+
+	50% {transform: translate(0, 0);}
+
+	75% {transform: translate(0, 5%);}
+
+	to {transform: translate(0, 0);}
+}
+
+.p1_bj3 {
+	width: 50%;
+	height: 10%;
+	/* transform: rotate(15deg); */
+	left: 20%;
+	top: 8%;
+	animation: p1bj34 0.5s linear both 1s;
+}
+@keyframes p1bj34 {
+	from {
+		transform: translate(0, -200%);
+	}
+
+	to {
+		transform: translate(0, 0);
+	}
+}
+.p1_bj4 {
+	height: 30%;
+	width: 73%;
+	top: 17%;
+	left: 15%;
+	animation: p1bj34 0.7s linear both 1.2s;
+}
+.p1_bj5,.p1_bj6,.p1_bj7 {
+	width: 10%;
+	height: 10%;
+}
+.p1_bj5 {
+	z-index: 2;
+	top: 57%;
+	width: 25%;
+	height: 20%;
+	animation: p1bj567 0.3s linear both 2s;
+}
+.p1_bj6 {
+	z-index: 2;
+	top: 57%;
+	width: 37%;
+	height: 20%;
+	left: 35%;
+	animation: p1bj567 0.3s linear both 2.1s;
+}
+.p1_bj6_scale{
+	animation: p1_bj6_scale 0.8s infinite linear;
+}
+@keyframes p1_bj6_scale{
+	from{transform: scale(1);}
+	50%{transform: scale(1.2);}
+	to{transform: scale(1);}
+}
+.p1_bj7 {
+	z-index: 2;
+	top: 50%;
+	width: 20%;
+	height: 20%;
+	right: 0%;
+	animation: p1bj567 0.3s linear both 2.2s;
+}
+@keyframes p1bj567 {
+	from {
+		transform: translate(0, -400%);
+	}
+
+	to {
+		transform: translate(0, 0);
+	}
+}
+																												/* 第二页从这里开始 */
+.beiJing1{
+	width: 100%;
+	height: 100%;
+	animation: beiJing1 1s both 0.5s;
+}
+@keyframes beiJing1{
+	from{transform: translate(0,-200%);}
+	25%{transform: translate(0,20%);}
+	50%{transform: translate(0,30%);}
+	to{transform: translate(0,0);}
+}
+.beiJing2{
+	width: 100%;
+	height: 50%;
+	top: 50%;
+	animation: beiJing2 0.7s linear both 1s;
+}
+@keyframes beiJing2{
+	from{transform: translate(0,100%);}
+	to{transform: translate(0,0);}
+}
+.beiJing3{
+	width: 90%;
+	left: 5%;
+	top: 15%;
+	animation: beiJing3 1s both 1s;
+}
+@keyframes beiJing3{
+	from{transform: translate(0,-200%);}
+	25%{transform: translate(0,0);}
+	50%{transform: rotate(-10deg);}
+	75%{transform: rotate(10deg);}
+	to{transform: rotate(0);}
+}
+.wenTiQuYu{
+	width: 70%;
+	height: 15%;
+	top: 28%;
+	left: 15%;
+	animation: wenTiQuYu 1s linear both 1s;
+}
+@keyframes wenTiQuYu{
+	from{transform: translate(-120%,0) rotate(-360deg);}
+	to{transform: translate(0,0) rotate(0);}
+}
+.wenTiTouBu{
+	width: 60%;
+	height: 50%;
+	left: 20%;
+}
+.wenTiTuPian{
+	width: 100%;
+	height: 100%;
+}
+.tiHao{
+	width: 80%;
+	height: 100%;
+	left: 10%;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 2%;
+}
+.wenTiShenTi{
+	top: 50%;
+	width: 90%;
+	height: 50%;
+	left: 7%;
+}
+.wenTi{
+	width: 100%;
+	height: 100%;
+	color: aliceblue;
+	text-align: center;
+	margin-top: 6%;
+}
+.xuanXiangQuYu{
+	width: 90%;
+	height: 28%;
+	top: 55%;
+	left: 5%;
+	animation: xuanXiangQuYu 1s linear both 1.5s;
+}
+@keyframes xuanXiangQuYu{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+.xuanXiang1{
+	width: 50%;
+	height: 40%;
+	transform: rotate(-10deg);
+	top: 9%;
+}
+.xuanXiangDeTuPian{
+	width: 100%;
+	height: 100%;
+	left: 5%;
+}
+.xuanXiangDeNeiRong{
+	width: 100%;
+	top: 37%;
+	left: 20%;
+}
+.xuanXiang2{
+	width: 50%;
+	height: 40%;
+	transform: rotate(10deg);
+	top: 14%;
+	left: 50%;
+}
+.xuanXiang3{
+	width: 50%;
+	height: 40%;
+	transform: rotate(10deg);
+	top: 9%;
+	top: 60%;
+}
+.xuanXiang4{
+	width: 50%;
+	height: 40%;
+	transform: rotate(10deg);
+	left: 55%;
+	top: 70%;
+}
+.page2{
+	background: black;
+}
+
+
+
+
+
+
+
+
+
+																				/* 交互区 */
+.jiShiQi{
+	top: 4%;
+	left: 10%;
+	width: 10%;
+	height: 5%;
+	/* background-color: greenyellow; */
+	z-index: 9;
+}
+.jiShiQi>h3{
+	width: 100%;
+	height: 100%;
+	top: 5%;
+	left: 2%;
+	text-align: center;
+	font-size: 30px;
+	color: #000000;
+}
+.jiShiQi>.zhong{
+	width: 200%;
+	top: -49%;
+	left: -46%;
+}
+.a{
+	animation: fangDa 1s linear infinite 1s;
+}
+@keyframes fangDa{
+	from{transform: scale(0.5);}
+	to{transform: scale(1);}
+}
+																				/* 以上是计时器 */
+.xiaBu{
+	width: 70%;
+	height: 98%;
+	background-color: brown;
+	border: black 3% solid;
+	border-radius: 0.8rem;
+}
+.hidden{
+	display: none;
+}
+.top{
+	animation: fadeOut 1s both linear;
+}
+@keyframes fadeOut{
+	from{opacity: 1;}
+	to{opacity: 0;}
+}
+.next{
+	animation: nextIn 1s both linear;
+}
+@keyframes nextIn{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+																						/* 以上是翻页效果 */
+																						/* 以下是选择正确与否的效果，每一次都要修改类名 */
+.p2_false1{												/* 右上角 */
+	width:15%;
+	top: 57%;
+	left: 80%;
+	opacity: 0;
+}
+.p2_false2{												/* 左下角 */
+	width:15%;
+	top: 77%;
+	left: 40%;
+	opacity: 0;
+}
+.p2_false3{												/* 右下角 */
+	width:15%;
+	top: 77%;
+	left: 80%;
+	opacity: 0;
+}
+.p2_true{												/* 左上角 */
+	width:15%;
+	top: 57%;
+	left: 40%;
+	opacity: 0;
+}
+.p3_false1{												/* 左上角 */
+	width:15%;
+	top: 57%;
+	left: 40%;
+	opacity: 0;
+}
+.p3_true{												/* 右上角 */
+	width:15%;
+	top: 57%;
+	left: 80%;
+	opacity: 0;
+}
+.p3_false2{												/* 左下角 */
+	width:15%;
+	top: 77%;
+	left: 40%;
+	opacity: 0;
+}
+.p3_false3{												/* 右下角 */
+	width:15%;
+	top: 77%;
+	left: 80%;
+	opacity: 0;
+}
+
+.p4_false1{												/* 左上角 */
+	width:15%;
+	top: 57%;
+	left: 40%;
+	opacity: 0;
+}
+.p4_true{												/* 右上角 */
+	width:15%;
+	top: 57%;
+	left: 80%;
+	opacity: 0;
+}
+.p4_false2{												/* 左下角 */
+	width:15%;
+	top: 77%;
+	left: 40%;
+	opacity: 0;
+}
+.p4_false3{												/* 右下角 */
+	width:15%;
+	top: 77%;
+	left: 80%;
+	opacity: 0;
+}
+.p5_true{												/* 左上角 */
+	width:15%;
+	top: 57%;
+	left: 40%;
+	opacity: 0;
+}
+.p5_false1{												/* 右上角 */
+	width:15%;
+	top: 57%;
+	left: 80%;
+	opacity: 0;
+}
+.p5_false2{												/* 左下角 */
+	width:15%;
+	top: 77%;
+	left: 40%;
+	opacity: 0;
+}
+.p5_false3{												/* 右下角 */
+	width:15%;
+	top: 77%;
+	left: 80%;
+	opacity: 0;
+}
+.p6_false1{												/* 左上角 */
+	width:15%;
+	top: 57%;
+	left: 40%;
+	opacity: 0;
+}
+.p6_true{												/* 右上角 */
+	width:15%;
+	top: 57%;
+	left: 80%;
+	opacity: 0;
+}
+.p6_false2{												/* 左下角 */
+	width:15%;
+	top: 77%;
+	left: 40%;
+	opacity: 0;
+}
+.p6_false3{												/* 右下角 */
+	width:15%;
+	top: 77%;
+	left: 80%;
+	opacity: 0;
+}
+.p7_true{												/* 左下角 */
+	width:15%;
+	top: 77%;
+	left: 80%;
+	opacity: 0;
+}
+.p7_false1{												/* 左上角 */
+	width:15%;
+	top: 57%;
+	left: 40%;
+	opacity: 0;
+}
+.p7_false2{												/* 右上角 */
+	width:15%;
+	top: 57%;
+	left: 80%;
+	opacity: 0;
+}
+.p7_false3{												/* 右下角 */
+	width:15%;
+	top: 77%;
+	left: 40%;
+	opacity: 0;
+}
+.p8_true{												/* 左下角 */
+	width:15%;
+	top: 77%;
+	left: 80%;
+	opacity: 0;
+}
+.p8_false1{												/* 左上角 */
+	width:15%;
+	top: 57%;
+	left: 40%;
+	opacity: 0;
+}
+.p8_false2{												/* 右上角 */
+	width:15%;
+	top: 57%;
+	left: 80%;
+	opacity: 0;
+}
+.p8_false3{												/* 右下角 */
+	width:15%;
+	top: 77%;
+	left: 40%;
+	opacity: 0;
+}
+.p9_true{												/* 左下角 */
+	width:15%;
+	top: 77%;
+	left: 40%;
+	opacity: 0;
+}
+.p9_false1{												/* 左上角 */
+	width:15%;
+	top: 57%;
+	left: 40%;
+	opacity: 0;
+}
+.p9_false2{												/* 右上角 */
+	width:15%;
+	top: 57%;
+	left: 80%;
+	opacity: 0;
+}
+.p9_false3{												/* 右下角 */
+	width:15%;
+	top: 77%;
+	left: 80%;
+	opacity: 0;
+}
+.p10_true{												/* 左下角 */
+	width:15%;
+	top: 77%;
+	left: 40%;
+	opacity: 0;
+}
+.p10_false1{												/* 左上角 */
+	width:15%;
+	top: 57%;
+	left: 40%;
+	opacity: 0;
+}
+.p10_false2{												/* 右上角 */
+	width:15%;
+	top: 57%;
+	left: 80%;
+	opacity: 0;
+}
+.p10_false3{												/* 右下角 */
+	width:15%;
+	top: 77%;
+	left: 80%;
+	opacity: 0;
+}
+
+.p11_false2{												/* 左下角 */
+	width:15%;
+	top: 77%;
+	left: 40%;
+	opacity: 0;
+}
+.p11_true{												/* 左上角 */
+	width:15%;
+	top: 57%;
+	left: 40%;
+	opacity: 0;
+}
+.p11_false1{												/* 右上角 */
+	width:15%;
+	top: 57%;
+	left: 80%;
+	opacity: 0;
+}
+.p11_false3{												/* 右下角 */
+	width:15%;
+	top: 77%;
+	left: 80%;
+	opacity: 0;
+}
+
+.p12_true{												/* 左下角 */
+	width:15%;
+	top: 77%;
+	left: 40%;
+	opacity: 0;
+}
+.p12_false1{												/* 左上角 */
+	width:15%;
+	top: 57%;
+	left: 40%;
+	opacity: 0;
+}
+.p12_false2{												/* 右上角 */
+	width:15%;
+	top: 57%;
+	left: 80%;
+	opacity: 0;
+}
+.p12_false3{												/* 右下角 */
+	width:15%;
+	top: 77%;
+	left: 80%;
+	opacity: 0;
+}
+
+.p13_false2{												/* 左下角 */
+	width:15%;
+	top: 77%;
+	left: 40%;
+	opacity: 0;
+}
+.p13_false1{												/* 左上角 */
+	width:15%;
+	top: 57%;
+	left: 40%;
+	opacity: 0;
+}
+.p13_true{												/* 右上角 */
+	width:15%;
+	top: 57%;
+	left: 80%;
+	opacity: 0;
+}
+.p13_false3{												/* 右下角 */
+	width:15%;
+	top: 77%;
+	left: 80%;
+	opacity: 0;
+}
+
+
+
+
+.showIt{
+	animation: showIt 0.5s both linear;
+}
+@keyframes showIt{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+
+
+/* 最后一页的样式 */
+
+#lastone,#up{
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+
+
+#lastone{
+	position: relative;
+	float: left;
+	height: 75%;
+	background-color: aquamarine;
+}
+
+#up{
+	position: relative;
+	top: 0%;
+	left: 0%;
+	float: left;
+	width: 100%;
+	height: 25%;
+    overflow: hidden;
+	background-color: aquamarine;
+}
+
+.carmera{
+	position: absolute;
+	top: -1%;
+	width: 90.3%;
+	height: 10%;
+	left: 5.3%;
+	right: 10%;
+	z-index: 0;
+}
+
+.camer2{
+	position: absolute;
+	top: 0%;
+	width: 90.3%;
+	height: 105%;
+	left: 5.3%;
+	right: 10%;
+	z-index: 5;
+	background: cover;
+} 
+
+.shadow{
+	position: absolute;
+	width: 75%;
+	height: 8%;
+	top: -1%;
+	left: 13%;
+	right: 20%;
+	z-index: 4;
+	opacity: 0.8;
+}
+
+.back{
+	position: absolute;
+	width: 74%;
+	height: 88%;
+	top: 0%;
+	left: 13%;
+	right: 25%;
+	z-index: 2;
+	animation: print 1.5s both ease-in-out;
+	border: #000000 solid 1px;
+	background-color: beige;
+}
+
+.pic{
+	position: absolute;
+	width: 68%;
+	height: 65%;
+	top: 1%;
+	left: 16%;
+	right: 25%;
+	z-index: 3;
+	animation: print 1.5s both ease-in-out;
+}
+
+.coin{
+	position: absolute;
+    top: 70%;
+	left:35% ;
+	z-index: 3;
+	width: 10%;
+	animation: print 1.5s both ease-in-out;
+}
+
+#lastone>.scale{
+	position: absolute;
+	top: 70.5%;
+	left: 55%;
+	z-index: 3;
+	font-size: 25px;
+	animation: print 1.5s both ease-in-out;
+}
+
+#lastone>.again{
+	position: absolute;
+    z-index: 3;	
+	top: 79%;
+	left: 36%;
+	background-color: yellow;
+	width: 19%;
+	font-size: 15px;
+    border-radius: 20px;
+	padding: 10px;
+	animation: print 1.5s both ease-in-out;
+	text-align: center;
+}
+
+@keyframes print{
+	from{transform: translateY(-2000px);}
+	to{transform: translateY(0);}
+}
