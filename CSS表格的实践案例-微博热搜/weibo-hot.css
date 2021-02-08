@@ -1,0 +1,60 @@
+*{margin: 0;padding: 0;}
+ol{
+    list-style: decimal;
+    position: absolute;
+    left: 4%;
+    top: 20%;
+}
+body{
+    background: #F7F8FA;
+}
+#box{
+    position: relative;
+    width: 800px;
+    height: 630px;
+    background-color: #FFFFFF;
+    
+    margin: 0 auto;  
+    border-radius:20px; 
+    
+}
+h2{
+    text-align: center;
+    font-size: 50px;
+    font-family:黑体;
+    color: #FF0000;
+    position: relative;
+    top: 20px;
+}
+li{
+    position: relative;
+    width: 768px;
+    height: 30px;
+    /* background-color: yellow; */
+    margin-top: 18px ;
+    font-size: 15px;
+    font-family: 黑体;
+    left: 2%;
+    
+}
+span{
+    position: absolute;
+    right: 5%;
+    color: #AAA09F;
+}
+a{
+    text-decoration: none;
+    color: #1A1A1A;
+}
+li:last-child{
+    left:3%;
+}
+hr{
+    position: absolute;
+    left:-2%;
+    width: 100%;
+    color: #F7F7F7;
+}
+li:hover{
+    background-color: #F3F3F3;
+}
