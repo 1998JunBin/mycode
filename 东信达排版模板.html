@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0px;padding: 0px;}
+         .bigbox{
+            width: 80%;
+            height: auto;
+            margin: 0 auto;
+        } 
+        /*内容大标题样式开始*/
+        .bigbox .box_title{
+            width: 100%;
+            height: auto;
+            text-align: center;/*设置inline-block元素水平居中*/
+        }
+        .bigbox .box_title .b_title1{
+            width: 100%;
+            height: auto;
+            text-align: center;
+            font-size: 36px;
+            line-height: 1.5em;
+            color:#0070C0;
+            font-weight: bold;
+            padding: 10px 0px;
+        }
+        .bigbox .box_title .b_title2{
+            width: auto;
+            height: auto;
+            display: inline-block;/*设置成行内块元素，让p标签宽度由内容来决定*/
+            text-align: center;
+            font-size:26px ;
+            color: #fff;
+            line-height: 1em;
+            background-color: #0070c0;
+
+            /*设置边框圆角开始*/
+            border-width: 10px;
+            border-style: solid;
+            border-radius: 40px;
+            border-color: #0070c0;
+            /*设置边框圆角结束*/
+
+            font-weight: bold;
+            margin-top: 10px;
+            padding: 5px 10px;
+        }
+        /*内容大标题样式结束*/
+
+        /*第一部分内容区开始*/
+        .bigbox .box_cont1{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            flex-wrap: wrap;
+            }
+            /*盒子宽度为45%*/
+        .bigbox .box_cont1 .cont1_cont{
+            width: 45%;
+            height: auto;
+            border: 2px solid #c6c8c8;
+            border-radius: 15px;
+            padding: 15px 15px;
+            }
+        .bigbox .box_cont1 .cont1_cont .top{
+            width: auto;
+            height: auto;
+            margin-bottom: 10px;
+            display: flex;
+        }
+        .bigbox .box_cont1 .cont1_cont .top img{
+            width: 48px;
+            height: auto;
+            
+        }
+        .bigbox .box_cont1 .cont1_cont .top span{
+            font-size: 24px;
+            color: #000;
+            font-weight: bold;
+            line-height: 1.5em;
+            align-self: center;
+        }
+        .bigbox .box_cont1 .cont1_cont .top_hr{
+            max-width: 30%;
+            height: 1px;
+            background-color: #666666;
+            margin-bottom: 10px;
+            margin-left: 0px;
+        }
+        .bigbox .box_cont1 .cont1_cont .top_cont{
+            width: auto;
+            height: auto;
+            font-size:16px ;
+            line-height: 1.5em;
+            margin-left: 0px;
+            margin-bottom: 10px;
+        }
+        /*第一部分内容区结束*/
+
+        /*第二部分内容区开始*/
+        .bigbox .second_cont_title{
+            margin-top: 100px;
+        }
+        .bigbox .box_cont2{
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+        }
+        .bigbox .box_cont2 .cont2_cont{
+            width: 25%;
+            height: auto;
+            padding: 20px 40px;/*内填充让内容与边框之间有间隔*/
+        }
+        .bigbox .box_cont2 .cont2_cont .cont2_top{
+            width: 100%;
+            height: auto;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .bigbox .box_cont2 .cont2_cont .cont2_top span{
+            font-size: 46px;
+            color: #fff;
+            line-height: 1.3em;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .bigbox .box_cont2 .cont2_cont .cont2_top img{
+            width: 42px!important;
+            height: auto;
+        }
+        .bigbox .box_cont2 .cont2_cont .cont2_hr{
+            width: 50%;
+            height: 2px;
+            background-color: #fff;
+            border: 0px;
+            margin: 10px auto ;
+        }
+        .bigbox .box_cont2 .cont2_cont .cont2_cont_title{
+            width: auto;
+            height: auto;
+            font-size: 24px;
+            color: #fff;
+            font-weight: bold;
+            line-height: 1em;
+            text-align: center;
+            margin: 20px 0px;
+            
+        }
+        .bigbox .box_cont2 .cont2_cont .cont2_cont_text{
+            width: auto;
+            height: auto;
+            font-size:18px ;
+            color: #fff;
+            line-height: 1.5em;
+            text-align: left;
+        }
+
+        /*设置盒子背景颜色开始*/
+        .bigbox .box_cont2 .orange{
+            background-color:#ff9933 ;
+        }
+        .bigbox .box_cont2 .purple{
+            background-color:#666699 ;
+        }
+        .bigbox .box_cont2 .yellow{
+            background-color:#ffcc00 ;
+        }
+        .bigbox .box_cont2 .gray{
+            background-color:#595959 ;
+        }
+        /*设置盒子背景颜色结束*/
+        .bigbox .no-margin{
+            margin-top: 0px;
+        }
+        /*第二部分内容区结束*/
+
+        /*第三部分内容区开始*/
+        .bigbox .box_cont3{
+            width: 100%;
+            height: auto;
+            text-align: center;
+        }
+        .bigbox .box_cont3 img{
+            width: 70%!important;
+            height: auto;
+            margin-top: 30px;
+        }
+        .bigbox .box_cont3 .cont3_text{
+            width: auto;
+            height: auto;
+            font-size: 18px;
+            color: #000;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        /*第三部分内容区结束*/
+
+        /*移动端样式开始*/
+        @media only screen and (max-width:769px){
+            .bigbox{
+                width: 100%;
+            }
+            /*第一个盒子移动端调整开始*/
+            .bigbox .box_cont1{
+               
+            }
+            .bigbox .box_cont1 .cont1_cont{
+                width:90%;
+                margin: 20px auto;
+            }
+            .bigbox .box_cont1 .cont1_cont .top span{
+                display: inline-block;
+                width: 100%;
+                margin-top: 10px;
+            }
+            .bigbox .box_cont1 .cont1_cont .top_cont{
+                font-size: 20px;
+            }
+            /*第一个盒子移动端调整结束*/
+
+            /*第二个盒子移动端调整开始*/
+            .bigbox .box_cont2{
+                flex-wrap: wrap;
+            }
+            .bigbox .box_cont2 .cont2_cont{
+                width: 100%;
+            }
+            /*第二个盒子移动端调整结束*/
+        }
+    </style>
+</head>
+<body>
+<!--bigbox是外层最大的盒子，占body的80%，水平居中-->
+<div class="bigbox">
+    <!--每个部分内容的大标题-->
+    <!--大标题开始-->
+    <div class="box_title">
+        <p class="b_title1">电子行业管理困扰</p>
+        <p class="b_title2">聚焦行业痛点</p>
+    </div>
+    <!--大标题结束-->
+
+    <!--第一部分的内容区开始-->
+    <div class="box_cont1">
+        <!--左边盒子-->
+        <div class="cont1_cont">
+            <!--顶部图片和标题-->
+            <div class="top">   
+                <img src="" alt="pic">
+                <span class="top_title">材料编号管理不易</span>
+            </div>
+            <!--横线分隔-->
+            <hr class="top_hr">
+            <!--文字内容-->    
+            <p class="top_cont">由于电子业产品结构复杂，料件种类繁多，以手工方式进行编号，容易发生缺号，漏号，重复，编错的情况。</p>
+        </div>
+
+        <!--右边盒子-->
+        <div class="cont1_cont">
+             <!--顶部图片和标题-->
+             <div class="top">   
+                <img src="" alt="pic">
+                <span class="top_title">产品设计工作繁重,客户需求多样化</span>
+            </div>
+            <!--横线分隔-->
+            <hr class="top_hr">
+            <!--文字内容-->    
+            <p class="top_cont">电子业的普遍特性就是小批量、多品种，产品中有大量的元素需要客户最终确定，例如颜色，电源线欧标还是美标等等，而且客户还常常有其特殊需求，造成了产品设计部门的工作繁重，BOM的编制难。</p>
+        </div>
+    </div>
+    <!--第一部分的内容区结束-->
+
+    <!--第二部分的内容区开始-->
+        <!--第二部分内容区标题开始-->
+        <div class="box_title second_cont_title">
+            <p class="b_title1">东信达ERP电子电器行业解决方案</p>
+            <p class="b_title2">为您提供全面专业的解决方案</p>
+        </div>
+        <!--第二部分内容区标题结束-->
+
+        <!--第二部分内容区内容开始-->
+
+        <!--第一行开始-->
+        <div class="box_cont2">
+            <!--单个盒子-->
+            <div class="cont2_cont orange">
+                <!--顶部标题和图标-->
+                <div class="cont2_top">
+                    <span>01</span>
+                    <img src="" alt="pic">
+                </div>
+                <!--分隔线-->
+                <hr class="cont2_hr">
+                <!--内容区标题-->
+                <p class="cont2_cont_title">销售管理</p>
+                <!--内容区内容-->
+                <p class="cont2_cont_text">销售管理是物料在企业内流动的终点，是将客户和购货机构获得订货需求，将信息传递给计划、采购、仓存等系统，从仓库、采购等系统获得货物、传递给购货单位，完成物流管理。</p>
+            </div>  
+            <!--单个盒子-->
+
+             <!--单个盒子-->
+             <div class="cont2_cont purple">
+                <!--顶部标题和图标-->
+                <div class="cont2_top">
+                    <span>01</span>
+                    <img src="" alt="pic">
+                </div>
+                <!--分隔线-->
+                <hr class="cont2_hr">
+                <!--内容区标题-->
+                <p class="cont2_cont_title">销售管理</p>
+                <!--内容区内容-->
+                <p class="cont2_cont_text">销售管理是物料在企业内流动的终点，是将客户和购货机构获得订货需求，将信息传递给计划、采购、仓存等系统，从仓库、采购等系统获得货物、传递给购货单位，完成物流管理。</p>
+            </div>  
+            <!--单个盒子-->
+
+             <!--单个盒子-->
+             <div class="cont2_cont yellow">
+                <!--顶部标题和图标-->
+                <div class="cont2_top">
+                    <span>01</span>
+                    <img src="" alt="pic">
+                </div>
+                <!--分隔线-->
+                <hr class="cont2_hr">
+                <!--内容区标题-->
+                <p class="cont2_cont_title">销售管理</p>
+                <!--内容区内容-->
+                <p class="cont2_cont_text">销售管理是物料在企业内流动的终点，是将客户和购货机构获得订货需求，将信息传递给计划、采购、仓存等系统，从仓库、采购等系统获得货物、传递给购货单位，完成物流管理。</p>
+            </div>  
+            <!--单个盒子-->
+
+             <!--单个盒子-->
+             <div class="cont2_cont gray">
+                <!--顶部标题和图标-->
+                <div class="cont2_top">
+                    <span>01</span>
+                    <img src="" alt="pic">
+                </div>
+                <!--分隔线-->
+                <hr class="cont2_hr">
+                <!--内容区标题-->
+                <p class="cont2_cont_title">销售管理</p>
+                <!--内容区内容-->
+                <p class="cont2_cont_text">销售管理是物料在企业内流动的终点，是将客户和购货机构获得订货需求，将信息传递给计划、采购、仓存等系统，从仓库、采购等系统获得货物、传递给购货单位，完成物流管理。</p>
+            </div>  
+            <!--单个盒子-->
+        </div>
+        <!--第一行结束-->
+
+        <!--第二行开始-->
+        <div class="box_cont2 no-margin">
+            <!--单个盒子-->
+            <div class="cont2_cont gray">
+                <!--顶部标题和图标-->
+                <div class="cont2_top">
+                    <span>01</span>
+                    <img src="" alt="pic">
+                </div>
+                <!--分隔线-->
+                <hr class="cont2_hr">
+                <!--内容区标题-->
+                <p class="cont2_cont_title">销售管理</p>
+                <!--内容区内容-->
+                <p class="cont2_cont_text">销售管理是物料在企业内流动的终点，是将客户和购货机构获得订货需求，将信息传递给计划、采购、仓存等系统，从仓库、采购等系统获得货物、传递给购货单位，完成物流管理。</p>
+            </div>  
+            <!--单个盒子-->
+
+             <!--单个盒子-->
+             <div class="cont2_cont yellow">
+                <!--顶部标题和图标-->
+                <div class="cont2_top">
+                    <span>01</span>
+                    <img src="" alt="pic">
+                </div>
+                <!--分隔线-->
+                <hr class="cont2_hr">
+                <!--内容区标题-->
+                <p class="cont2_cont_title">销售管理</p>
+                <!--内容区内容-->
+                <p class="cont2_cont_text">销售管理是物料在企业内流动的终点，是将客户和购货机构获得订货需求，将信息传递给计划、采购、仓存等系统，从仓库、采购等系统获得货物、传递给购货单位，完成物流管理。</p>
+            </div>  
+            <!--单个盒子-->
+
+             <!--单个盒子-->
+             <div class="cont2_cont purple">
+                <!--顶部标题和图标-->
+                <div class="cont2_top">
+                    <span>01</span>
+                    <img src="" alt="pic">
+                </div>
+                <!--分隔线-->
+                <hr class="cont2_hr">
+                <!--内容区标题-->
+                <p class="cont2_cont_title">销售管理</p>
+                <!--内容区内容-->
+                <p class="cont2_cont_text">销售管理是物料在企业内流动的终点，是将客户和购货机构获得订货需求，将信息传递给计划、采购、仓存等系统，从仓库、采购等系统获得货物、传递给购货单位，完成物流管理。</p>
+            </div>  
+            <!--单个盒子-->
+
+             <!--单个盒子-->
+             <div class="cont2_cont orange">
+                <!--顶部标题和图标-->
+                <div class="cont2_top">
+                    <span>01</span>
+                    <img src="" alt="pic">
+                </div>
+                <!--分隔线-->
+                <hr class="cont2_hr">
+                <!--内容区标题-->
+                <p class="cont2_cont_title">销售管理</p>
+                <!--内容区内容-->
+                <p class="cont2_cont_text">销售管理是物料在企业内流动的终点，是将客户和购货机构获得订货需求，将信息传递给计划、采购、仓存等系统，从仓库、采购等系统获得货物、传递给购货单位，完成物流管理。</p>
+            </div>  
+            <!--单个盒子-->
+        </div>
+        <!--第二行结束-->
+
+        <!--第二部分内容区内容结束-->
+    <!--第二部分的内容区结束-->
+
+    <!--第三部分内容区开始-->
+        <!--第三部分内容区标题开始-->
+        <div class="box_title second_cont_title">
+            <p class="b_title2">作业流程图</p>
+        </div>
+        <!--第三部分内容区标题结束-->
+
+        <!--第三部分内容区内容开始-->
+        <div class="box_cont3">
+            <img src="" alt="pic">
+            <p class="cont3_text">注：作业流程支持灵活更改</p>
+        </div>
+        <!--第三部分内容区内容开始-->
+    <!--第三部分内容区开始-->
+</div>
+</body>
+</html>
